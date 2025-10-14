@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-content">
-        <div className="nav-logo">Şıxı</div>
+        <div className="nav-logo">1brah1m0f</div>
         
         {/* Desktop Menu */}
         <div className="nav-links desktop-menu">
@@ -58,3 +58,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+
