@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div className="home-section">
       <div className="container">
         <h1 className="big-title">
-          Hi, I'm <span className="gradient-text">Shixi</span> 👋
+          Hi, I'm <span className="gradient-text">Şıxı</span> 👋
         </h1>
         
         <p className="subtitle">
@@ -17,7 +18,7 @@ const Home = () => {
           Currently studying IT at Odlar Yurdu University.
         </p>
 
-         {/* CONTACT QUICK LINK */}
+        {/* CONTACT QUICK LINK */}
         <div style={{
           textAlign: 'center',
           marginTop: '3rem',
@@ -59,11 +60,9 @@ const Home = () => {
             View Contact Details →
           </Link>
         </div>
-
       </div>
     </div>
   )
 }
 
 export default Home
-
