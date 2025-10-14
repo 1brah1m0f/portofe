@@ -4,14 +4,14 @@ const Contact = () => {
   const contacts = [
     {
       name: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/1brah1m0f',
       color: '#333333',
       textColor: 'white',
       icon: '🐱'
     },
     {
       name: 'LinkedIn', 
-      url: 'https://linkedin.com',
+      url: 'www.linkedin.com/in/şıxıibrahimov',
       color: '#0077b5',
       textColor: 'white',
       icon: '💼'
@@ -103,3 +103,4 @@ const Contact = () => {
 }
 
 export default Contact
+
