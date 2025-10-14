@@ -8,18 +8,17 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #0f172a;
+  background: #0f172a;
   color: white;
   min-height: 100vh;
 }
 
-/* GRADIENT TEXT - KESİN ÇALIŞIR */
+/* GRADIENT TEXT */
 .gradient-text {
   background: linear-gradient(135deg, #38bdf8, #818cf8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
 }
 
 /* NAVBAR */
@@ -27,7 +26,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(10px);
   z-index: 100;
   border-bottom: 1px solid #334155;
@@ -48,6 +47,7 @@ body {
   color: #22d3ee;
 }
 
+/* DESKTOP MENU */
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -60,6 +60,67 @@ body {
 }
 
 .nav-link:hover {
+  color: #22d3ee;
+}
+
+/* HAMBURGER BUTTON */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  justify-content: space-between;
+}
+
+.hamburger-btn span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #cbd5e1;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.hamburger-btn:hover span {
+  background: #22d3ee;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.98);
+  backdrop-filter: blur(20px);
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  display: none;
+  z-index: 99;
+  border-top: 1px solid #334155;
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+.mobile-nav-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.mobile-nav-link:hover {
+  background: rgba(34, 211, 238, 0.1);
   color: #22d3ee;
 }
 
@@ -91,8 +152,7 @@ body {
   color: #94a3b8;
   margin-bottom: 2rem;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 2rem auto;
   line-height: 1.6;
 }
 
@@ -134,16 +194,16 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hamburger-btn {
+    display: flex;
+  }
+  
   .big-title {
     font-size: 2.5rem;
-  }
-  
-  .nav-links {
-    gap: 1rem;
-  }
-  
-  .nav-content {
-    padding: 1rem;
   }
   
   .button-group {
@@ -154,5 +214,9 @@ body {
   .btn {
     width: 200px;
     text-align: center;
+  }
+  
+  .nav-content {
+    padding: 1rem;
   }
 }
