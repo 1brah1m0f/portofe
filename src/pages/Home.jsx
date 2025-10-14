@@ -17,15 +17,6 @@ const Home = () => {
           Currently studying IT at Odlar Yurdu University.
         </p>
 
-        <div className="button-group">
-          <a href="https://github.com" className="btn btn-primary">
-            GitHub
-          </a>
-          
-          <a href="https://linkedin.com" className="btn btn-outline">
-            LinkedIn
-          </a>
-        </div>
       </div>
     </div>
   )
