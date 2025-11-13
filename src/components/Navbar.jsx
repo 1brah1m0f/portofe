@@ -28,6 +28,10 @@ const Navbar = () => {
           <Link to="/contact" className="nav-link" style={{
             color: location.pathname === '/contact' ? '#22d3ee' : '#cbd5e1'
           }}>Contact</Link>
+          <Link to="/mimi" className="nav-link" style={{
+            color: location.pathname === '/mimi' ? '#22d3ee' : '#cbd5e1'
+          }}>Contact</Link>
+          
         </div>
 
         {/* Hamburger Button - Mobile */}
@@ -50,6 +54,9 @@ const Navbar = () => {
           }}>Projects</Link>
           <Link to="/contact" className="mobile-nav-link" onClick={toggleMenu} style={{
             color: location.pathname === '/contact' ? '#22d3ee' : '#cbd5e1'
+          }}>Contact</Link>
+          <Link to="/mimi" className="mobile-nav-link" onClick={toggleMenu} style={{
+            color: location.pathname === '/mimi' ? '#22d3ee' : '#cbd5e1'
           }}>Contact</Link>
         </div>
       </div>
