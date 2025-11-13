@@ -6,7 +6,7 @@ const Home = () => {
     <div className="home-section">
       <div className="container">
         <h1 className="big-title">
-          Hi, I'm <span className="gradient-text">Şıxı</span> 👋
+          Hi, I'm <span className="gradient-text">Shixi</span> 👋
         </h1>
         
         <p className="subtitle">
