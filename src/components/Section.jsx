@@ -22,6 +22,14 @@ export function Tag({ children }) {
   )
 }
 
+// 'YYYY' → 2026, 'YYYY-MM' → May 2026, 'YYYY-MM-DD' → 23 May 2026
+export function formatDate(value, t) {
+  const [y, m, d] = value.split('-')
+  if (!m) return y
+  const month = t.months[Number(m) - 1]
+  return d ? `${Number(d)} ${month} ${y}` : `${month} ${y}`
+}
+
 export function period(start, end, t) {
-  return `${start} — ${end ?? t.present}`
+  return `${formatDate(start, t)} — ${end ? formatDate(end, t) : t.present}`
 }

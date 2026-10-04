@@ -1,6 +1,6 @@
 import { awards } from '../data'
-import { Globe, MapPin, Trophy } from './Icons'
-import Section from './Section'
+import { ArrowUpRight, Globe, MapPin, Trophy } from './Icons'
+import Section, { formatDate } from './Section'
 
 const badgeStyle = {
   2: 'bg-accent text-accent-fg',
@@ -44,9 +44,31 @@ export default function Awards({ t }) {
                       {a.places[aw.place]}
                     </span>
                   </div>
-                  <p className="mt-1 text-sm text-muted">{item.org}</p>
+                  <p className="mt-1 text-sm text-muted">
+                    {item.org}
+                    <span className="sm:hidden"> · {formatDate(aw.date, t)}</span>
+                  </p>
+                  {aw.news?.length > 0 && (
+                    <p className="mt-2.5 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs">
+                      <span className="font-mono text-muted">{a.news}:</span>
+                      {aw.news.map((n) => (
+                        <a
+                          key={n.url}
+                          href={n.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1 font-medium text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent"
+                        >
+                          {n.source}
+                          <ArrowUpRight className="size-3" />
+                        </a>
+                      ))}
+                    </p>
+                  )}
                 </div>
-                <time className="hidden shrink-0 font-mono text-xs text-muted sm:block">{aw.date}</time>
+                <time dateTime={aw.date} className="hidden shrink-0 font-mono text-xs text-muted sm:block">
+                  {formatDate(aw.date, t)}
+                </time>
               </li>
             )
           })}

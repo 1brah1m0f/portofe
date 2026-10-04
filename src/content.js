@@ -17,6 +17,7 @@ export const content = {
       language: 'Language',
     },
     present: 'Present',
+    months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     location: 'Baku, Azerbaijan',
     hero: {
       status: 'Open to internships & collaborations',
@@ -33,7 +34,7 @@ export const content = {
     },
     stats: {
       awards: 'Hackathon podiums',
-      products: 'Products shipped',
+      products: 'Products built',
       repos: 'Open-source repos',
       summit: 'International summit',
     },
@@ -93,6 +94,16 @@ export const content = {
       video: 'Demo video',
       more: 'More on GitHub',
       items: {
+        openly: {
+          title: 'Openly',
+          desc: 'Openly helps young people from Azerbaijan find and apply for opportunities abroad. Programs like Erasmus+, the European Solidarity Corps and UN Volunteers offer youth exchanges, training and volunteering — often with travel, accommodation and food covered. The hard part is finding them in time: Openly brings them together in one place, reminds you before deadlines close and tracks what you’ve saved and applied to. Browse for free, no account needed.',
+          highlights: [
+            'All opportunities in one place, with deadline reminders',
+            'Openly Student: scholarships, universities & a step-by-step roadmap',
+            'Compare universities side by side by level and budget',
+            'AI assistant for motivation letters, CV & essay review',
+          ],
+        },
         kiberedu: {
           title: 'KiberEdu.az',
           desc: 'An interactive cybersecurity education platform that helps school students learn security in a simple, engaging and practical way. Teachers create virtual classes, assign challenges and track progress; students build real skills through hands-on tasks.',
@@ -100,23 +111,17 @@ export const content = {
             '7 rooms across Red Team, Blue Team & GRC',
             'Points, daily streaks & leaderboards',
             'Separate student, teacher & admin roles',
-            'Responsive from 320px phones to desktop',
           ],
+        },
+        farmorfx: {
+          title: 'FarMorfX',
+          desc: 'Azerbaijan’s agritourism platform — “Rediscover the village”. Travelers discover and book farms, gardens and rural stays on a map, meet local farmers and earn coins they can exchange for partner discounts, while farm owners list and manage their places.',
+          highlights: ['Map-based discovery & booking with QR check-in', 'Reviews, ratings & owner dashboard', 'AI recommendations & chatbot'],
         },
         nextevent: {
           title: 'NextEvent',
           desc: 'An event management platform to create, discover and join events. Users manage their own events, join public ones and explore upcoming activities by interest — with an interactive map to see what’s happening nearby.',
           highlights: ['Create & manage your own events', 'Interest-based discovery', 'Interactive map of nearby events'],
-        },
-        coreapex: {
-          title: 'CoreApex',
-          desc: 'A smart-city platform for Azerbaijani municipalities that connects citizens, field inspectors and executives. Citizens report geo-tagged issues, AI classifies the photos and routes them to the right agency, and leaders track city-wide KPIs.',
-          highlights: ['AI photo classification & routing', 'Digital twin impact simulation', 'Installable PWA with offline support'],
-        },
-        cybervision: {
-          title: 'CyberVision',
-          desc: 'An AI-driven SOAR platform for small and mid-sized IT companies. Instead of only raising alerts, it analyzes threats from Wazuh, Suricata and Nmap logs and generates remediation scripts that run after admin approval.',
-          highlights: ['Detect → AI analysis → fix script → approve → run', 'Client, SOC analyst & admin views', 'Automated PDF incident reports'],
         },
         asc: {
           title: 'Azerbaijan Startup Community',
@@ -129,6 +134,7 @@ export const content = {
       label: 'Awards',
       title: 'Hackathons & recognition',
       places: { 2: '2nd place', 3: '3rd place', nom: 'Second Prize nomination' },
+      news: 'In the news',
       items: {
         gamejam: { title: 'OYU Game Jam', org: 'Xsolla & Odlar Yurdu University' },
         farm2tour: { title: 'Farm2Tour Hackathon', org: 'Agrarian Development Volunteers' },
@@ -138,7 +144,7 @@ export const content = {
         ai4cyber: { title: 'Ai4Cyber Hackathon', org: 'Holberton School' },
       },
       spotlight: {
-        kicker: 'Conference · 29/07/2026',
+        kicker: 'Conference · Jul 2026',
         title: 'PG Connects Shanghai 2026',
         text: 'After the Xsolla Game Jam, I was invited to Shanghai for the Pocket Gamer Connects Summit 2026. I presented my own project, met dozens of developers, investors and publishers, and built meaningful relationships with people from every corner of the gaming industry.',
         place: 'Shanghai, China',
@@ -213,6 +219,7 @@ export const content = {
       language: 'Dil',
     },
     present: 'İndi',
+    months: ['Yan', 'Fev', 'Mar', 'Apr', 'May', 'İyn', 'İyl', 'Avq', 'Sen', 'Okt', 'Noy', 'Dek'],
     location: 'Bakı, Azərbaycan',
     hero: {
       status: 'Təcrübə proqramlarına və əməkdaşlığa açığam',
@@ -229,7 +236,7 @@ export const content = {
     },
     stats: {
       awards: 'Hakatonda mükafat',
-      products: 'Hazır məhsul',
+      products: 'Qurduğum məhsul',
       repos: 'Açıq repozitoriya',
       summit: 'Beynəlxalq sammit',
     },
@@ -289,6 +296,16 @@ export const content = {
       video: 'Demo video',
       more: 'GitHub-da daha çox',
       items: {
+        openly: {
+          title: 'Openly',
+          desc: 'Openly Azərbaycan gənclərinə xaricdəki imkanları tapmağa və onlara müraciət etməyə kömək edir. Erasmus+, Avropa Həmrəylik Korpusu və BMT Könüllüləri kimi proqramlar gənclər mübadiləsi, təlim və könüllülük imkanları təklif edir — çox vaxt yol, yaşayış və qida xərcləri qarşılanır. Çətin olan onları vaxtında tapmaqdır: Openly bu imkanları bir yerə toplayır, son tarixlərdən əvvəl xatırladır və saxladığın, müraciət etdiyin proqramları izləyir. Hesab açmadan pulsuz baxa bilərsən.',
+          highlights: [
+            'Bütün imkanlar bir yerdə, son tarix xatırlatmaları ilə',
+            'Openly Student: təqaüdlər, universitetlər və addım-addım yol xəritəsi',
+            'Universitetləri səviyyə və büdcəyə görə yan-yana müqayisə',
+            'Motivasiya məktubu, CV və esse üçün Sİ köməkçisi',
+          ],
+        },
         kiberedu: {
           title: 'KiberEdu.az',
           desc: 'Məktəblilərə kibertəhlükəsizliyi sadə, maraqlı və praktiki şəkildə öyrədən interaktiv təhsil platforması. Müəllimlər virtual siniflər yaradır, tapşırıqlar verir və irəliləyişi izləyir; şagirdlər isə praktiki tapşırıqlarla real bacarıqlar qazanır.',
@@ -296,23 +313,17 @@ export const content = {
             'Red Team, Blue Team və GRC üzrə 7 otaq',
             'Xallar, gündəlik seriyalar və reytinq cədvəlləri',
             'Ayrı şagird, müəllim və admin rolları',
-            '320px telefondan masaüstünə qədər uyğunlaşan dizayn',
           ],
+        },
+        farmorfx: {
+          title: 'FarMorfX',
+          desc: 'Azərbaycanın aqroturizm platforması — “Kəndi yenidən kəşf et”. Səyahətçilər xəritədə fermaları, bağları və kənd evlərini tapıb rezerv edir, yerli fermerlərlə tanış olur və alışlardan qazandıqları coin-ləri tərəfdaş endirimlərinə dəyişir; ferma sahibləri isə öz məkanlarını əlavə edib idarə edir.',
+          highlights: ['Xəritə üzərində kəşf və QR ilə təsdiqlənən rezervasiya', 'Rəylər, reytinqlər və sahibkar paneli', 'Sİ tövsiyələri və çatbot'],
         },
         nextevent: {
           title: 'NextEvent',
           desc: 'Tədbirləri yaratmaq, kəşf etmək və onlara qoşulmaq üçün platforma. İstifadəçilər öz tədbirlərini idarə edir, açıq tədbirlərə qoşulur və maraqlarına uyğun yaxınlaşan fəaliyyətləri tapır — interaktiv xəritə ilə yaxınlıqdakı tədbirləri görmək asandır.',
           highlights: ['Öz tədbirlərini yarat və idarə et', 'Maraqlara əsaslanan kəşf', 'Yaxınlıqdakı tədbirlərin interaktiv xəritəsi'],
-        },
-        coreapex: {
-          title: 'CoreApex',
-          desc: 'Azərbaycan bələdiyyələri üçün vətəndaşları, sahə inspektorlarını və rəhbərləri birləşdirən ağıllı şəhər platforması. Vətəndaşlar geo-etiketli problemləri bildirir, süni intellekt şəkilləri təsnif edib uyğun quruma yönləndirir, rəhbərlər isə şəhər üzrə göstəriciləri izləyir.',
-          highlights: ['Sİ ilə şəkil təsnifatı və yönləndirmə', 'Rəqəmsal əkiz ilə təsir simulyasiyası', 'Oflayn işləyən, quraşdırıla bilən PWA'],
-        },
-        cybervision: {
-          title: 'CyberVision',
-          desc: 'Kiçik və orta İT şirkətləri üçün süni intellekt əsaslı SOAR platforması. Sadəcə xəbərdarlıq etmək əvəzinə Wazuh, Suricata və Nmap loglarındakı təhdidləri təhlil edir və admin təsdiqindən sonra işə düşən aradan qaldırma skriptləri yaradır.',
-          highlights: ['Aşkarla → Sİ təhlili → skript → təsdiq → icra', 'Müştəri, SOC analitik və admin panelləri', 'Avtomatik PDF insident hesabatları'],
         },
         asc: {
           title: 'Azerbaijan Startup Community',
@@ -325,6 +336,7 @@ export const content = {
       label: 'Mükafatlar',
       title: 'Hakatonlar və nailiyyətlər',
       places: { 2: '2-ci yer', 3: '3-cü yer', nom: '“İkinci mükafat” nominasiyası' },
+      news: 'Xəbərlərdə',
       items: {
         gamejam: { title: 'OYU Game Jam', org: 'Xsolla və Odlar Yurdu Universiteti' },
         farm2tour: { title: '“Farm2Tour” hakatonu', org: 'Aqrar İnkişaf Könüllüləri' },
@@ -334,7 +346,7 @@ export const content = {
         ai4cyber: { title: 'Ai4Cyber hakatonu', org: 'Holberton School' },
       },
       spotlight: {
-        kicker: 'Konfrans · 29/07/2026',
+        kicker: 'Konfrans · İyl 2026',
         title: 'PG Connects Şanxay 2026',
         text: 'Xsolla Game Jam-dən sonra Şanxaya, Pocket Gamer Connects Summit 2026-ya dəvət aldım. Öz layihəmi təqdim etdim, onlarla tərtibatçı, investor və naşirlə tanış oldum, dünyanın hər yerindən oyun sənayesində çalışan insanlarla dəyərli əlaqələr qurdum.',
         place: 'Şanxay, Çin',

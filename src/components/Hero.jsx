@@ -1,5 +1,5 @@
 import { links, stats } from '../data'
-import { ArrowDown, Download, Github, Linkedin, Mail, MapPin } from './Icons'
+import { ArrowDown, Download, Github, Instagram, Linkedin, Mail, MapPin } from './Icons'
 
 export default function Hero({ t }) {
   const h = t.hero
@@ -59,6 +59,9 @@ export default function Hero({ t }) {
             </a>
             <a href={links.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-fg">
               <Linkedin />
+            </a>
+            <a href={links.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="transition-colors hover:text-fg">
+              <Instagram />
             </a>
             <span className="h-4 w-px bg-line" />
             <span className="inline-flex items-center gap-1.5 text-sm">

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { links } from '../data'
-import { ArrowUp, ArrowUpRight, Check, Copy, Github, Linkedin, Mail, MapPin } from './Icons'
+import { ArrowUp, ArrowUpRight, Check, Copy, Github, Instagram, Linkedin, Mail, MapPin } from './Icons'
 
 export default function Contact({ t }) {
   const c = t.contact
@@ -57,6 +57,9 @@ export default function Contact({ t }) {
             </a>
             <a href={links.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-muted transition-colors hover:text-fg">
               <Github className="size-4" /> GitHub <ArrowUpRight className="size-3.5" />
+            </a>
+            <a href={links.instagram} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-muted transition-colors hover:text-fg">
+              <Instagram className="size-4" /> Instagram <ArrowUpRight className="size-3.5" />
             </a>
             <span className="inline-flex items-center gap-2 text-muted">
               <MapPin className="size-4" /> {t.location}

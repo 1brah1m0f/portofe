@@ -1,6 +1,9 @@
 import { links, projects } from '../data'
 import { ArrowUpRight, Check, Github, Play } from './Icons'
-import Section, { Tag } from './Section'
+import Section, { Tag, formatDate, period } from './Section'
+
+// Projects with only a year have no `end` key at all.
+const when = (project, t) => (project.end === undefined ? formatDate(project.start, t) : period(project.start, project.end, t))
 
 function ProjectLinks({ project, p }) {
   return (
@@ -69,9 +72,10 @@ export default function Projects({ t }) {
           <div>
             <div className="flex flex-wrap items-center gap-2 font-mono text-xs">
               <span className="rounded-full bg-accent px-2.5 py-1 font-medium text-accent-fg">{p.featured}</span>
-              <span className="rounded-full border border-line px-2.5 py-1 text-muted">
-                {featured.year} · {p.active}
-              </span>
+              <span className="rounded-full border border-line px-2.5 py-1 text-muted">{when(featured, t)}</span>
+              {featured.end === null && (
+                <span className="rounded-full bg-accent/15 px-2.5 py-1 text-accent">{p.active}</span>
+              )}
             </div>
             <h3 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl">{f.title}</h3>
             <p className="mt-4 text-lg leading-relaxed text-muted">{f.desc}</p>
@@ -100,7 +104,7 @@ export default function Projects({ t }) {
             >
               <div className="flex items-center justify-between font-mono text-xs text-muted">
                 <span>{String(i + 2).padStart(2, '0')}</span>
-                <span>{project.year}</span>
+                <span>{when(project, t)}</span>
               </div>
               <h3 className="mt-4 font-display text-2xl font-bold tracking-tight">{item.title}</h3>
               <p className="mt-3 leading-relaxed text-muted">{item.desc}</p>
