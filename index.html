@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shikhi Ibrahimov — Software Engineer</title>
+    <meta
+      name="description"
+      content="Shikhi Ibrahimov — IT student, software engineer and AWS Student Builder Group Leader from Baku, Azerbaijan. Projects, hackathon awards and experience."
+    />
+    <meta property="og:title" content="Shikhi Ibrahimov — Software Engineer" />
+    <meta property="og:description" content="AI products, full-stack projects, hackathon awards and tech community building in Baku." />
+    <meta property="og:image" content="/shikhi.png" />
+    <meta name="theme-color" content="#0b0d10" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply saved theme/language before first paint to avoid a flash.
+      try {
+        var th = localStorage.getItem('theme')
+        if (th === 'light' || th === 'dark') document.documentElement.dataset.theme = th
+        var lg = localStorage.getItem('lang')
+        if (lg === 'az' || lg === 'en') document.documentElement.lang = lg
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
