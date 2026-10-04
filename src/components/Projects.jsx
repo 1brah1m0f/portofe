@@ -11,7 +11,7 @@ const host = (url) => new URL(url).hostname.replace(/^www\./, '')
 
 function ProjectLinks({ project, p }) {
   const secondary =
-    'inline-flex items-center gap-1.5 rounded-full border border-line px-4 py-2 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:border-muted'
+    'inline-flex items-center gap-1.5 rounded-full border border-line px-4 py-2 text-[15px] font-semibold transition-all hover:-translate-y-0.5 hover:border-muted sm:text-sm'
   return (
     <div className="flex flex-wrap gap-2">
       {project.live && (
@@ -19,7 +19,7 @@ function ProjectLinks({ project, p }) {
           href={project.live}
           target="_blank"
           rel="noreferrer"
-          className="group/btn inline-flex items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-accent-fg transition-transform hover:-translate-y-0.5"
+          className="group/btn inline-flex items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-[15px] sm:text-sm font-semibold text-accent-fg transition-transform hover:-translate-y-0.5"
         >
           {p.live}
           <ArrowUpRight className="size-4 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
@@ -41,9 +41,9 @@ function ProjectLinks({ project, p }) {
   )
 }
 
-function Highlights({ items, className = '' }) {
+function Highlights({ items, className = '', big = false }) {
   return (
-    <ul className={`space-y-2 text-sm ${className}`}>
+    <ul className={`space-y-2 ${big ? 'text-[15px]' : 'text-[15px] sm:text-sm'} ${className}`}>
       {items.map((h) => (
         <li key={h} className="flex gap-2.5">
           <Check className="mt-0.5 size-4 shrink-0 text-accent" />
@@ -73,7 +73,7 @@ function Cover({ project, title, className = '' }) {
             <span className="size-2.5 rounded-full bg-[#28c840]" />
           </span>
           {project.live && (
-            <span className="mx-auto max-w-[70%] truncate rounded-md bg-bg/60 px-3 py-0.5 font-mono text-[11px] text-muted">
+            <span className="mx-auto max-w-[70%] truncate rounded-md bg-bg/60 px-3 py-0.5 font-mono text-xs sm:text-[11px] text-muted">
               {host(project.live)}
             </span>
           )}
@@ -103,7 +103,7 @@ function Cover({ project, title, className = '' }) {
         </div>
       </div>
       {project.live && (
-        <span className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full border border-line bg-bg/70 px-2.5 py-1 font-mono text-[11px] text-muted backdrop-blur">
+        <span className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full border border-line bg-bg/70 px-2.5 py-1 font-mono text-xs sm:text-[11px] text-muted backdrop-blur">
           <span className="size-1.5 rounded-full bg-accent" />
           {host(project.live)}
         </span>
@@ -114,7 +114,7 @@ function Cover({ project, title, className = '' }) {
 
 function Meta({ project, t, p }) {
   return (
-    <div className="flex flex-wrap items-center gap-2 font-mono text-xs">
+    <div className="flex flex-wrap items-center gap-2 font-mono text-[13px] sm:text-xs">
       <span className="rounded-full border border-line px-2.5 py-1 text-muted">{when(project, t)}</span>
       {project.end === null && <span className="rounded-full bg-accent/15 px-2.5 py-1 text-accent">{p.active}</span>}
       {project.team && (
@@ -135,12 +135,12 @@ function FeaturedCard({ project, t, p, flip }) {
         <Cover project={project} title={item.title} className={`aspect-[16/10] ${flip ? 'lg:order-2' : ''}`} />
         <div>
           <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-full bg-accent px-2.5 py-1 font-mono text-xs font-medium text-accent-fg">{p.featured}</span>
+            <span className="rounded-full bg-accent px-2.5 py-1 font-mono text-[13px] sm:text-xs font-medium text-accent-fg">{p.featured}</span>
             <Meta project={project} t={t} p={p} />
           </div>
-          <h3 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl">{item.title}</h3>
+          <h3 className="mt-5 font-display text-[1.75rem] leading-tight font-bold tracking-tight sm:text-4xl">{item.title}</h3>
           <p className="mt-4 leading-relaxed text-muted">{item.desc}</p>
-          <Highlights items={item.highlights} className="mt-6 text-[15px]" />
+          <Highlights items={item.highlights} className="mt-6" big />
           <div className="mt-6 flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <Tag key={tag}>{tag}</Tag>
@@ -205,7 +205,7 @@ export default function Projects({ t }) {
           href={`${links.github}?tab=repositories`}
           target="_blank"
           rel="noreferrer"
-          className="group inline-flex items-center gap-2 rounded-full border border-line bg-surface px-5 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:border-accent"
+          className="group inline-flex items-center gap-2 rounded-full border border-line bg-surface px-5 py-3 text-[15px] sm:text-sm font-semibold transition-all hover:-translate-y-0.5 hover:border-accent"
         >
           <Github className="size-4" />
           {p.more}

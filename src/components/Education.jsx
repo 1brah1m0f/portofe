@@ -24,10 +24,10 @@ export default function Education({ t }) {
                 </div>
                 <ArrowUpRight className="size-4 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-fg" />
               </div>
-              <p className="mt-6 font-mono text-xs text-muted">{period(ed.start, ed.end, t)}</p>
+              <p className="mt-6 font-mono text-[13px] sm:text-xs text-muted">{period(ed.start, ed.end, t)}</p>
               <h3 className="mt-2 font-display text-xl font-bold tracking-tight">{item.title}</h3>
               <p className="mt-1 font-medium text-accent">{item.org}</p>
-              <p className="mt-4 text-sm leading-relaxed text-muted">{item.note}</p>
+              <p className="mt-4 text-[15px] sm:text-sm leading-relaxed text-muted">{item.note}</p>
             </a>
           )
         })}

@@ -4,10 +4,10 @@ import Section from './Section'
 function Group({ title, items }) {
   return (
     <div className="reveal spotlight rounded-3xl border border-line bg-surface p-6 sm:p-7">
-      <h3 className="font-mono text-xs tracking-wider text-muted uppercase">{title}</h3>
+      <h3 className="font-mono text-[13px] sm:text-xs tracking-wider text-muted uppercase">{title}</h3>
       <ul className="mt-4 flex flex-wrap gap-2">
         {items.map((s) => (
-          <li key={s} className="rounded-lg border border-line bg-surface-2 px-3 py-1.5 text-sm font-medium transition-colors hover:border-accent hover:text-accent">
+          <li key={s} className="rounded-lg border border-line bg-surface-2 px-3 py-1.5 text-[15px] sm:text-sm font-medium transition-colors hover:border-accent hover:text-accent">
             {s}
           </li>
         ))}
@@ -28,11 +28,11 @@ export default function Skills({ t }) {
         <Group title={s.groups.soft} items={s.soft} />
 
         <div className="reveal rounded-3xl border border-line bg-surface p-6 sm:p-7">
-          <h3 className="font-mono text-xs tracking-wider text-muted uppercase">{s.languagesTitle}</h3>
+          <h3 className="font-mono text-[13px] sm:text-xs tracking-wider text-muted uppercase">{s.languagesTitle}</h3>
           <ul className="mt-5 space-y-4">
             {s.languages.map((l) => (
               <li key={l.name}>
-                <div className="flex items-baseline justify-between gap-3 text-sm">
+                <div className="flex items-baseline justify-between gap-3 text-[15px] sm:text-sm">
                   <span className="font-medium">{l.name}</span>
                   <span className="text-muted">{l.level}</span>
                 </div>

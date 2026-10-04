@@ -47,6 +47,14 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Avoid single-word last lines in paragraphs (helps most on narrow screens). */
+p,
+li {
+  text-wrap: pretty;
 }
 
 body {

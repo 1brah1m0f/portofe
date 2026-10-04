@@ -41,7 +41,7 @@ export default function Experience({ t }) {
                     </p>
                   </div>
                   <p
-                    className={`rounded-full px-3 py-1 font-mono text-xs whitespace-nowrap ${
+                    className={`rounded-full px-3 py-1 font-mono text-[13px] sm:text-xs whitespace-nowrap ${
                       current ? 'bg-accent/15 text-accent' : 'bg-surface-2 text-muted'
                     }`}
                   >

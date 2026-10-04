@@ -76,7 +76,7 @@ function CountUp({ value }) {
 function Badge({ icon: Icon, className, delay, children }) {
   return (
     <span
-      className={`animate-float absolute hidden items-center gap-2 rounded-full border border-line bg-surface/90 px-3.5 py-2 text-xs font-semibold whitespace-nowrap shadow-xl shadow-black/10 backdrop-blur sm:inline-flex ${className}`}
+      className={`animate-float absolute hidden items-center gap-2 rounded-full border border-line bg-surface/90 px-3.5 py-2 text-[13px] sm:text-xs font-semibold whitespace-nowrap shadow-xl shadow-black/10 backdrop-blur sm:inline-flex ${className}`}
       style={{ animationDelay: delay }}
     >
       <Icon className="size-4 text-accent" />
@@ -107,33 +107,33 @@ export default function Hero({ t }) {
             {h.status}
           </p>
 
-          <p className="reveal mt-8 font-mono text-sm text-muted" style={{ '--d': 1 }}>
+          <p className="reveal mt-8 font-mono text-[15px] sm:text-sm text-muted" style={{ '--d': 1 }}>
             {h.greeting}
           </p>
           <h1
-            className="reveal mt-2 font-display text-5xl leading-[1.02] font-extrabold tracking-tight sm:text-6xl lg:text-7xl"
+            className="reveal mt-2 font-display text-[2.75rem] leading-[1.05] font-extrabold tracking-tight sm:text-6xl lg:text-7xl"
             style={{ '--d': 2 }}
           >
             {h.name}
           </h1>
-          <p className="reveal mt-5 font-display text-2xl font-bold tracking-tight sm:text-3xl" style={{ '--d': 3 }}>
+          <p className="reveal mt-4 font-display text-[1.375rem] font-bold tracking-tight sm:mt-5 sm:text-3xl" style={{ '--d': 3 }}>
             <RotatingRole roles={h.roles} />
           </p>
-          <p className="reveal mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg" style={{ '--d': 4 }}>
+          <p className="reveal mt-5 max-w-xl text-[17px] leading-relaxed text-muted sm:text-lg" style={{ '--d': 4 }}>
             {h.intro}
           </p>
 
           <div className="reveal mt-8 flex flex-wrap gap-3" style={{ '--d': 5 }}>
             <a
               href="#projects"
-              className="group inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-accent-fg shadow-lg shadow-accent/20 transition-all hover:-translate-y-0.5 hover:shadow-accent/40"
+              className="group inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 text-[15px] sm:text-sm font-semibold text-accent-fg shadow-lg shadow-accent/20 transition-all hover:-translate-y-0.5 hover:shadow-accent/40"
             >
               {h.ctaProjects}
               <ArrowDown className="size-4 transition-transform group-hover:translate-y-0.5" />
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-5 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:border-muted"
+              className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-5 py-3 text-[15px] sm:text-sm font-semibold transition-all hover:-translate-y-0.5 hover:border-muted"
             >
               <Mail className="size-4" />
               {h.ctaContact}
@@ -141,7 +141,7 @@ export default function Hero({ t }) {
             <a
               href={links.cv}
               download
-              className="inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-semibold text-muted transition-colors hover:text-fg"
+              className="inline-flex items-center gap-2 rounded-full px-4 py-3 text-[15px] sm:text-sm font-semibold text-muted transition-colors hover:text-fg"
             >
               <Download className="size-4" />
               {h.ctaCv}
@@ -166,7 +166,7 @@ export default function Hero({ t }) {
               </a>
             ))}
             <span className="h-4 w-px bg-line" />
-            <span className="inline-flex items-center gap-1.5 text-sm">
+            <span className="inline-flex items-center gap-1.5 text-[15px] sm:text-sm">
               <MapPin className="size-4" />
               {t.location}
             </span>
@@ -192,7 +192,7 @@ export default function Hero({ t }) {
             </Badge>
           </div>
           <figcaption className="mt-6 flex justify-center sm:hidden">
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 font-mono text-xs text-muted">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 font-mono text-[13px] sm:text-xs text-muted">
               <MapPin className="size-3.5 text-accent" />
               {h.photoCaption}
             </span>
@@ -208,7 +208,7 @@ export default function Hero({ t }) {
               className="reveal spotlight flex flex-col-reverse rounded-2xl border border-line bg-surface/80 px-5 py-6 backdrop-blur sm:px-6"
               style={{ '--d': i }}
             >
-              <dt className="mt-1 text-sm text-muted">{t.stats[s.id]}</dt>
+              <dt className="mt-1 text-[15px] sm:text-sm text-muted">{t.stats[s.id]}</dt>
               <dd className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
                 <CountUp value={s.value} />
               </dd>

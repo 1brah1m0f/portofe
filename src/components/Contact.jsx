@@ -23,13 +23,13 @@ export default function Contact({ t }) {
           <div className="bg-grid pointer-events-none absolute inset-0 -z-10 opacity-50" />
           <div className="pointer-events-none absolute -top-32 left-1/2 -z-10 h-72 w-[600px] max-w-full -translate-x-1/2 rounded-full bg-accent/15 blur-3xl" />
 
-          <p className="font-mono text-sm text-accent">
+          <p className="font-mono text-[15px] sm:text-sm text-accent">
             08 <span className="text-muted">/</span> {c.label}
           </p>
-          <h2 className="mx-auto mt-4 max-w-2xl font-display text-4xl font-extrabold tracking-tight text-balance sm:text-5xl">
+          <h2 className="mx-auto mt-4 max-w-2xl font-display text-[2rem] leading-tight font-extrabold tracking-tight text-balance sm:text-5xl">
             {c.title}
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-muted">{c.text}</p>
+          <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg">{c.text}</p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             <a
@@ -49,9 +49,9 @@ export default function Contact({ t }) {
             </button>
           </div>
 
-          <p className="mt-6 font-mono text-sm text-muted">{links.email}</p>
+          <p className="mt-6 font-mono text-[15px] sm:text-sm text-muted">{links.email}</p>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-[15px] sm:text-sm">
             <a href={links.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-muted transition-colors hover:text-fg">
               <Linkedin className="size-4" /> LinkedIn <ArrowUpRight className="size-3.5" />
             </a>
@@ -74,7 +74,7 @@ export default function Contact({ t }) {
 export function Footer({ t }) {
   return (
     <footer className="border-t border-line">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 text-sm text-muted sm:flex-row sm:px-6">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 text-[15px] sm:text-sm text-muted sm:flex-row sm:px-6">
         <p>
           © {new Date().getFullYear()} {t.hero.name} · {t.footer.built}
         </p>

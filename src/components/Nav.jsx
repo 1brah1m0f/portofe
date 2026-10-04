@@ -70,7 +70,7 @@ export default function Nav({ t, lang, setLang, theme, setTheme }) {
               <a
                 href={`#${id}`}
                 aria-current={active === id ? 'true' : undefined}
-                className={`relative rounded-full px-3 py-2 text-sm transition-colors duration-300 hover:text-fg ${
+                className={`relative rounded-full px-3 py-2 text-[15px] sm:text-sm transition-colors duration-300 hover:text-fg ${
                   active === id ? 'bg-surface-2 text-fg' : 'text-muted'
                 }`}
               >
@@ -81,14 +81,14 @@ export default function Nav({ t, lang, setLang, theme, setTheme }) {
         </ul>
 
         <div className="flex items-center gap-2">
-          <div role="group" aria-label={t.nav.language} className="flex rounded-full border border-line bg-surface p-0.5 font-mono text-xs">
+          <div role="group" aria-label={t.nav.language} className="flex rounded-full border border-line bg-surface p-0.5 font-mono text-[13px] sm:text-xs">
             {['en', 'az'].map((l) => (
               <button
                 key={l}
                 type="button"
                 onClick={() => setLang(l)}
                 aria-pressed={lang === l}
-                className={`rounded-full px-2.5 py-1.5 uppercase transition-colors ${
+                className={`rounded-full px-3 py-2 uppercase transition-colors sm:px-2.5 sm:py-1.5 ${
                   lang === l ? 'bg-accent text-accent-fg' : 'text-muted hover:text-fg'
                 }`}
               >
@@ -100,7 +100,7 @@ export default function Nav({ t, lang, setLang, theme, setTheme }) {
             type="button"
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             aria-label={t.nav.theme}
-            className="grid size-9 place-items-center rounded-full border border-line bg-surface text-muted transition-colors hover:text-fg"
+            className="grid size-10 place-items-center rounded-full border border-line bg-surface text-muted transition-colors hover:text-fg sm:size-9"
           >
             {theme === 'dark' ? <Sun className="size-4" /> : <Moon className="size-4" />}
           </button>
@@ -109,7 +109,7 @@ export default function Nav({ t, lang, setLang, theme, setTheme }) {
             onClick={() => setOpen((o) => !o)}
             aria-label={open ? t.nav.close : t.nav.menu}
             aria-expanded={open}
-            className="grid size-9 place-items-center rounded-full border border-line bg-surface text-fg lg:hidden"
+            className="grid size-10 place-items-center rounded-full border border-line bg-surface text-fg sm:size-9 lg:hidden"
           >
             {open ? <Close className="size-4" /> : <Menu className="size-4" />}
           </button>
