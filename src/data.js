@@ -80,6 +80,7 @@ export const projects = [
     end: '2026-10',
     tags: ['Next.js', 'React 19', 'NestJS', 'Prisma', 'Supabase', 'Tailwind'],
     live: 'https://kiber-edu-az-one.vercel.app/',
+    video: 'https://youtu.be/XpwtyzCIKU8',
     code: 'https://github.com/1brah1m0f/KiberEduAz',
   },
   {
