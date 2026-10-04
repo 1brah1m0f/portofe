@@ -54,30 +54,54 @@ function Highlights({ items, className = '' }) {
   )
 }
 
-// Visual header: screenshot if provided, otherwise an animated icon panel.
+// Visual header: real screenshot in a browser frame if provided, otherwise an animated icon panel.
 function Cover({ project, title, className = '' }) {
   const Icon = icons[project.icon] ?? Globe
+
+  if (project.image) {
+    const Frame = project.live ? 'a' : 'div'
+    const frameProps = project.live ? { href: project.live, target: '_blank', rel: 'noreferrer', 'aria-label': title } : {}
+    return (
+      <Frame
+        {...frameProps}
+        className={`flex flex-col overflow-hidden rounded-2xl border border-line bg-surface-2 shadow-2xl shadow-black/10 ${className}`}
+      >
+        <div className="flex h-8 shrink-0 items-center gap-3 border-b border-line px-3">
+          <span className="flex gap-1.5" aria-hidden="true">
+            <span className="size-2.5 rounded-full bg-[#ff5f57]" />
+            <span className="size-2.5 rounded-full bg-[#febc2e]" />
+            <span className="size-2.5 rounded-full bg-[#28c840]" />
+          </span>
+          {project.live && (
+            <span className="mx-auto max-w-[70%] truncate rounded-md bg-bg/60 px-3 py-0.5 font-mono text-[11px] text-muted">
+              {host(project.live)}
+            </span>
+          )}
+        </div>
+        <div className="relative min-h-0 flex-1 overflow-hidden">
+          <img
+            src={project.image}
+            alt={title}
+            loading="lazy"
+            width="1280"
+            height="800"
+            className="size-full object-cover object-top transition-transform duration-[1.2s] ease-out group-hover:scale-[1.05]"
+          />
+        </div>
+      </Frame>
+    )
+  }
+
   return (
     <div className={`relative overflow-hidden rounded-2xl border border-line bg-surface-2 ${className}`}>
-      {project.image ? (
-        <img
-          src={project.image}
-          alt={title}
-          loading="lazy"
-          className="size-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
-        />
-      ) : (
-        <>
-          <div className="bg-grid absolute inset-0 opacity-80" style={{ maskImage: 'none', backgroundSize: '28px 28px' }} />
-          <div className="absolute -right-12 -bottom-16 size-56 rounded-full bg-accent/25 blur-3xl transition-transform duration-700 group-hover:scale-125" />
-          <div className="absolute -top-16 -left-12 size-40 rounded-full bg-accent/10 blur-2xl" />
-          <div className="absolute inset-0 grid place-items-center">
-            <div className="grid size-20 place-items-center rounded-3xl border border-line bg-surface text-accent shadow-2xl shadow-black/20 transition-transform duration-500 group-hover:-translate-y-1.5 group-hover:-rotate-6">
-              <Icon className="size-9" />
-            </div>
-          </div>
-        </>
-      )}
+      <div className="bg-grid absolute inset-0 opacity-80" style={{ maskImage: 'none', backgroundSize: '28px 28px' }} />
+      <div className="absolute -right-12 -bottom-16 size-56 rounded-full bg-accent/25 blur-3xl transition-transform duration-700 group-hover:scale-125" />
+      <div className="absolute -top-16 -left-12 size-40 rounded-full bg-accent/10 blur-2xl" />
+      <div className="absolute inset-0 grid place-items-center">
+        <div className="grid size-20 place-items-center rounded-3xl border border-line bg-surface text-accent shadow-2xl shadow-black/20 transition-transform duration-500 group-hover:-translate-y-1.5 group-hover:-rotate-6">
+          <Icon className="size-9" />
+        </div>
+      </div>
       {project.live && (
         <span className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full border border-line bg-bg/70 px-2.5 py-1 font-mono text-[11px] text-muted backdrop-blur">
           <span className="size-1.5 rounded-full bg-accent" />

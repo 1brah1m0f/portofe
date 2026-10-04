@@ -50,6 +50,7 @@ export const experience = [
 export const projects = [
   {
     id: 'openly',
+    image: '/projects/openly.jpg',
     featured: true,
     icon: 'globe',
     start: '2026-09',
@@ -61,6 +62,7 @@ export const projects = [
   },
   {
     id: 'seasentry',
+    image: '/projects/seasentry.jpg',
     featured: true,
     team: true,
     icon: 'satellite',
@@ -72,6 +74,7 @@ export const projects = [
   },
   {
     id: 'kiberedu',
+    image: '/projects/kiberedu.jpg',
     icon: 'shield',
     start: '2026-08',
     end: '2026-10',
@@ -81,6 +84,7 @@ export const projects = [
   },
   {
     id: 'farmorfx',
+    image: '/projects/farmorfx.jpg',
     icon: 'leaf',
     start: '2026',
     tags: ['Next.js 16', 'React 19', 'Prisma', 'PostgreSQL', 'Google Maps', 'Gemini AI'],
@@ -99,6 +103,7 @@ export const projects = [
   },
   {
     id: 'asc',
+    image: '/projects/asc.jpg',
     icon: 'rocket',
     start: '2026',
     tags: ['Next.js', 'TypeScript', 'Supabase', 'i18n'],
