@@ -7,13 +7,20 @@ export const links = {
   github: 'https://github.com/1brah1m0f',
   instagram: 'https://www.instagram.com/sixi.ibrahimli/',
   cv: '/Shikhi_Ibrahimov_CV.docx',
+  recommendation: '/Shikhi_Ibrahimov_Recommendation_Orbit_Catapult.pdf',
 }
 
 export const stats = [
   { id: 'awards', value: '5' },
-  { id: 'products', value: '5+' },
+  { id: 'products', value: '6+' },
   { id: 'repos', value: '35+' },
   { id: 'summit', value: '1' },
+]
+
+// Scrolling strip under the hero
+export const marquee = [
+  'Python', 'TypeScript', 'React', 'Next.js', 'Node.js', 'NestJS', 'FastAPI', 'PostgreSQL',
+  'Supabase', 'Prisma', 'Tailwind CSS', 'AWS', 'Gemini AI', 'LLMs', 'Vector DB', 'Playwright', 'Figma',
 ]
 
 export const experience = [
@@ -38,10 +45,13 @@ export const experience = [
   },
 ]
 
+// featured: shown as a large card. icon: cover icon name (see Projects.jsx).
+// image: optional screenshot path in /public (e.g. '/projects/openly.png') — replaces the icon cover.
 export const projects = [
   {
     id: 'openly',
     featured: true,
+    icon: 'globe',
     start: '2026-09',
     end: null,
     tags: ['React', 'TypeScript', 'Supabase', 'Gemini AI', 'Resend', 'Tailwind'],
@@ -50,7 +60,19 @@ export const projects = [
     code: 'https://github.com/1brah1m0f/Voluntering-platform',
   },
   {
+    id: 'seasentry',
+    featured: true,
+    team: true,
+    icon: 'satellite',
+    start: '2026-07',
+    end: '2026-09',
+    tags: ['Next.js 16', 'FastAPI', 'PostgreSQL', 'Leaflet', 'Satellite SAR', 'AI'],
+    live: 'https://seasentry.vercel.app',
+    code: 'https://github.com/Kanan-peoiks/Seasentry',
+  },
+  {
     id: 'kiberedu',
+    icon: 'shield',
     start: '2026-08',
     end: '2026-10',
     tags: ['Next.js', 'React 19', 'NestJS', 'Prisma', 'Supabase', 'Tailwind'],
@@ -59,6 +81,7 @@ export const projects = [
   },
   {
     id: 'farmorfx',
+    icon: 'leaf',
     start: '2026',
     tags: ['Next.js 16', 'React 19', 'Prisma', 'PostgreSQL', 'Google Maps', 'Gemini AI'],
     live: 'https://farmorfx.vercel.app',
@@ -66,6 +89,7 @@ export const projects = [
   },
   {
     id: 'nextevent',
+    icon: 'calendar',
     start: '2026-04',
     end: '2026-05',
     tags: ['TypeScript', 'Full-stack', 'Maps', 'Vercel', 'Render'],
@@ -75,6 +99,7 @@ export const projects = [
   },
   {
     id: 'asc',
+    icon: 'rocket',
     start: '2026',
     tags: ['Next.js', 'TypeScript', 'Supabase', 'i18n'],
     live: 'https://azerbaijan-startup-community.vercel.app',

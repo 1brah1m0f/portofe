@@ -31,6 +31,12 @@ export const content = {
       ctaCv: 'Download CV',
       photoAlt: 'Shikhi Ibrahimov in Shanghai',
       photoCaption: 'Shanghai · PG Connects 2026',
+      roles: ['Software Engineer', 'AWS Builder Group Leader', 'Hackathon Competitor', 'Product Builder'],
+      badges: {
+        aws: 'AWS Builder Group Leader',
+        awards: '5× hackathon podium',
+        summit: 'PG Connects · Shanghai',
+      },
     },
     stats: {
       awards: 'Hackathon podiums',
@@ -93,7 +99,18 @@ export const content = {
       code: 'Code',
       video: 'Demo video',
       more: 'More on GitHub',
+      team: 'Team project',
       items: {
+        seasentry: {
+          title: 'SeaSentry',
+          desc: 'A SpaceTech and AI solution for early oil-spill detection in the Caspian Sea, built by our team in the VISTAR Center of Excellence program (IDDA, Azercosmos, Israel Aerospace Industries & Holon Institute of Technology). Satellite SAR imagery is scanned for slicks, AI estimates risk and probable cause, and operators decide on the response — with spilled oil recovered as a resource. Presented at VISTAR Demo Day.',
+          highlights: [
+            'Detect. Treat. Recycle.',
+            'Satellite SAR analysis with AI risk scoring',
+            'Human-in-the-loop response & cleanup planning',
+            'Live Caspian Sea map & PDF reports',
+          ],
+        },
         openly: {
           title: 'Openly',
           desc: 'Openly helps young people from Azerbaijan find and apply for opportunities abroad. Programs like Erasmus+, the European Solidarity Corps and UN Volunteers offer youth exchanges, training and volunteering — often with travel, accommodation and food covered. The hard part is finding them in time: Openly brings them together in one place, reminds you before deadlines close and tracks what you’ve saved and applied to. Browse for free, no account needed.',
@@ -167,7 +184,7 @@ export const content = {
         hit: {
           title: 'Entrepreneurship, Satellite Technology & AI',
           org: 'Holon Institute of Technology',
-          note: 'Through the Vistar program',
+          note: 'VISTAR Center of Excellence program with IDDA, Azercosmos & Israel Aerospace Industries — SeaSentry team, Demo Day',
         },
       },
     },
@@ -201,6 +218,18 @@ export const content = {
       built: 'Built with React & Tailwind CSS',
       top: 'Back to top',
     },
+    recommendation: {
+      label: 'Recommendation',
+      title: 'What mentors say',
+      quote:
+        'One of Shikhi’s main strengths is his ability to combine technical thinking with an entrepreneurial approach. He does not simply complete assigned tasks; he tries to understand both the technical and practical sides of a problem.',
+      quote2:
+        'I am confident that Shikhi has the intellectual ability, work ethic, and motivation required to succeed in a rigorous graduate program. I recommend him without reservation…',
+      name: 'Dr. Raz Itzhaki',
+      role: 'CEO, Orbit Catapult · Lecturer',
+      context: 'Mentor in the VISTAR Center of Excellence program',
+      read: 'Read the full letter',
+    },
   },
 
   az: {
@@ -233,6 +262,12 @@ export const content = {
       ctaCv: 'CV-ni yüklə',
       photoAlt: 'Şıxı İbrahimov Şanxayda',
       photoCaption: 'Şanxay · PG Connects 2026',
+      roles: ['Proqram mühəndisi', 'AWS Builder Group lideri', 'Hakaton iştirakçısı', 'Məhsul qurucusu'],
+      badges: {
+        aws: 'AWS Builder Group lideri',
+        awards: '5× hakaton mükafatı',
+        summit: 'PG Connects · Şanxay',
+      },
     },
     stats: {
       awards: 'Hakatonda mükafat',
@@ -295,7 +330,18 @@ export const content = {
       code: 'Kod',
       video: 'Demo video',
       more: 'GitHub-da daha çox',
+      team: 'Komanda layihəsi',
       items: {
+        seasentry: {
+          title: 'SeaSentry',
+          desc: 'Xəzər dənizində neft dağılmalarını erkən aşkarlamaq üçün kosmik texnologiya və süni intellekt əsaslı həll. VISTAR Mükəmməllik Mərkəzinin proqramında (İRİA, Azercosmos, Israel Aerospace Industries və Holon Texnologiya İnstitutu) komandamızla hazırladıq. Peyk SAR təsvirləri ləkələr üçün analiz edilir, süni intellekt risk və ehtimal olunan səbəbi qiymətləndirir, operatorlar isə cavab tədbirinə qərar verir — dağılan neft isə resurs kimi geri qazanılır. VISTAR Demo Day-də təqdim olundu.',
+          highlights: [
+            'Aşkarla. Təmizlə. Təkrar emal et.',
+            'Peyk SAR analizi və Sİ ilə risk qiymətləndirməsi',
+            'İnsan nəzarətli cavab və təmizləmə planlaması',
+            'Canlı Xəzər xəritəsi və PDF hesabatlar',
+          ],
+        },
         openly: {
           title: 'Openly',
           desc: 'Openly Azərbaycan gənclərinə xaricdəki imkanları tapmağa və onlara müraciət etməyə kömək edir. Erasmus+, Avropa Həmrəylik Korpusu və BMT Könüllüləri kimi proqramlar gənclər mübadiləsi, təlim və könüllülük imkanları təklif edir — çox vaxt yol, yaşayış və qida xərcləri qarşılanır. Çətin olan onları vaxtında tapmaqdır: Openly bu imkanları bir yerə toplayır, son tarixlərdən əvvəl xatırladır və saxladığın, müraciət etdiyin proqramları izləyir. Hesab açmadan pulsuz baxa bilərsən.',
@@ -369,7 +415,7 @@ export const content = {
         hit: {
           title: 'Sahibkarlıq, peyk texnologiyaları və süni intellekt',
           org: 'Holon Texnologiya İnstitutu',
-          note: 'Vistar proqramı çərçivəsində',
+          note: 'İRİA, Azercosmos və Israel Aerospace Industries ilə VISTAR Mükəmməllik Mərkəzi proqramı — SeaSentry komandası, Demo Day',
         },
       },
     },
@@ -402,6 +448,20 @@ export const content = {
     footer: {
       built: 'React və Tailwind CSS ilə hazırlanıb',
       top: 'Yuxarı qayıt',
+    },
+    recommendation: {
+      label: 'Tövsiyə',
+      title: 'Mentorlar nə deyir',
+      quote:
+        'One of Shikhi’s main strengths is his ability to combine technical thinking with an entrepreneurial approach. He does not simply complete assigned tasks; he tries to understand both the technical and practical sides of a problem.',
+      quote2:
+        'I am confident that Shikhi has the intellectual ability, work ethic, and motivation required to succeed in a rigorous graduate program. I recommend him without reservation…',
+      translation:
+        '“Şıxının əsas güclü tərəflərindən biri texniki təfəkkürü sahibkarlıq yanaşması ilə birləşdirə bilməsidir. O, sadəcə verilən tapşırıqları yerinə yetirmir — problemin həm texniki, həm də praktiki tərəflərini anlamağa çalışır.”',
+      name: 'Dr. Raz Itzhaki',
+      role: 'CEO, Orbit Catapult · Müəllim',
+      context: 'VISTAR Mükəmməllik Mərkəzi proqramında mentor',
+      read: 'Məktubun tam mətni',
     },
   },
 }
