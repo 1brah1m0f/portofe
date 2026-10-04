@@ -70,6 +70,7 @@ export const projects = [
     end: '2026-09',
     tags: ['Next.js 16', 'FastAPI', 'PostgreSQL', 'Leaflet', 'Satellite SAR', 'AI'],
     live: 'https://seasentry.vercel.app',
+    video: 'https://drive.google.com/file/d/1J9HH3rv2HppjuHZVmvWZBaTckl4_6wiX/view',
     code: 'https://github.com/Kanan-peoiks/Seasentry',
   },
   {
