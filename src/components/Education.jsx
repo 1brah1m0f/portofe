@@ -6,7 +6,7 @@ export default function Education({ t }) {
   const e = t.education
 
   return (
-    <Section id="education" index="06" label={e.label} title={e.title}>
+    <Section id="education" index="07" label={e.label} title={e.title}>
       <div className="grid gap-6 md:grid-cols-3">
         {education.map((ed) => {
           const item = e.items[ed.id]

@@ -24,7 +24,7 @@ export default function Contact({ t }) {
           <div className="pointer-events-none absolute -top-32 left-1/2 -z-10 h-72 w-[600px] max-w-full -translate-x-1/2 rounded-full bg-accent/15 blur-3xl" />
 
           <p className="font-mono text-[15px] sm:text-sm text-accent">
-            08 <span className="text-muted">/</span> {c.label}
+            09 <span className="text-muted">/</span> {c.label}
           </p>
           <h2 className="mx-auto mt-4 max-w-2xl font-display text-[2rem] leading-tight font-extrabold tracking-tight text-balance sm:text-5xl">
             {c.title}

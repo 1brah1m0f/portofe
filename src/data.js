@@ -123,8 +123,38 @@ export const awards = [
   { id: 'farm2tour', place: 2, date: '2026-05-14' },
   { id: 'rccode', place: 'nom', date: '2026-05-11' },
   { id: 'azcon', place: 3, date: '2026-04-10' },
-  { id: 'gencvizyon', place: 3, date: '2026-01-22' },
+  {
+    id: 'gencvizyon',
+    place: 3,
+    date: '2026-01-22',
+    news: [{ source: 'Muallim.edu.az', url: 'https://muallim.edu.az/gencvizyon-ideyatonunun-final-merhelesi-kecirilib' }],
+  },
   { id: 'ai4cyber', place: 3, date: '2026-01-22' },
+]
+
+// Press: articles about events/programs Shikhi took part in. Titles stay in the original language.
+export const press = [
+  {
+    id: 'pgconnects',
+    source: 'PocketGamer.biz',
+    date: '2026-07-25',
+    title: 'Thanks to the sponsors of PG Connects Summit Shanghai',
+    url: 'https://www.pocketgamer.biz/thanks-to-the-sponsors-of-pg-connects-summit-shanghai/',
+  },
+  {
+    id: 'gencvizyon',
+    source: 'Muallim.edu.az',
+    date: '2026-02-06',
+    title: '“GəncVizyon” ideyatonunun final mərhələsi keçirilib',
+    url: 'https://muallim.edu.az/gencvizyon-ideyatonunun-final-merhelesi-kecirilib',
+  },
+  {
+    id: 'vistar',
+    source: 'Ministry of Digital Development and Transport',
+    date: '2025-12-17',
+    title: '“Vistar” Center of Excellence Launched in Azerbaijan',
+    url: 'https://mincom.gov.az/en/media-en/news/vistar-center-of-excellence-launched-in-azerbaijan',
+  },
 ]
 
 export const education = [

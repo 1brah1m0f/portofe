@@ -20,7 +20,7 @@ export default function Skills({ t }) {
   const s = t.skills
 
   return (
-    <Section id="skills" index="07" label={s.label} title={s.title}>
+    <Section id="skills" index="08" label={s.label} title={s.title}>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {skills.map((g) => (
           <Group key={g.id} title={s.groups[g.id]} items={g.items} />

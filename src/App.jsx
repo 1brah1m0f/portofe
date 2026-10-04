@@ -10,6 +10,7 @@ import Education from './components/Education'
 import Skills from './components/Skills'
 import Marquee from './components/Marquee'
 import Recommendation from './components/Recommendation'
+import Press from './components/Press'
 import Contact, { Footer } from './components/Contact'
 import { ArrowUp } from './components/Icons'
 
@@ -122,6 +123,7 @@ export default function App() {
         <Projects t={t} />
         <Awards t={t} />
         <Recommendation t={t} />
+        <Press t={t} />
         <Education t={t} />
         <Skills t={t} />
         <Contact t={t} />

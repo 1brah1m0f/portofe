@@ -230,6 +230,17 @@ export const content = {
       context: 'Mentor in the VISTAR Center of Excellence program',
       read: 'Read the full letter',
     },
+    press: {
+      label: 'Press',
+      title: 'In the news',
+      intro: 'Coverage of the programs, competitions and events I took part in.',
+      read: 'Read the article',
+      items: {
+        pgconnects: 'I was invited to this summit in Shanghai after the Xsolla Game Jam and presented my own project there.',
+        gencvizyon: 'The final of the GəncVizyon 2026 ideathon, where our team took 3rd place.',
+        vistar: 'The launch of the VISTAR Center of Excellence — the program where our team built SeaSentry and presented it at Demo Day.',
+      },
+    },
   },
 
   az: {
@@ -462,6 +473,17 @@ export const content = {
       role: 'CEO, Orbit Catapult · Müəllim',
       context: 'VISTAR Mükəmməllik Mərkəzi proqramında mentor',
       read: 'Məktubun tam mətni',
+    },
+    press: {
+      label: 'Mətbuat',
+      title: 'Xəbərlərdə',
+      intro: 'İştirak etdiyim proqramlar, yarışlar və tədbirlər haqqında yazılanlar.',
+      read: 'Məqaləni oxu',
+      items: {
+        pgconnects: 'Xsolla Game Jam-dən sonra Şanxaydakı bu sammitə dəvət aldım və orada öz layihəmi təqdim etdim.',
+        gencvizyon: 'Komandamızın 3-cü yer qazandığı GəncVizyon 2026 ideyatonunun finalı.',
+        vistar: 'VISTAR Mükəmməllik Mərkəzinin açılışı — komandamızın SeaSentry-ni qurub Demo Day-də təqdim etdiyi proqram.',
+      },
     },
   },
 }
