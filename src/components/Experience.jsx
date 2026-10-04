@@ -18,7 +18,7 @@ export default function Experience({ t }) {
                   current ? 'bg-accent' : 'bg-muted'
                 }`}
               />
-              <article className="rounded-2xl border border-line bg-surface p-6 transition-colors hover:border-muted/50 sm:p-8">
+              <article className="spotlight rounded-2xl border border-line bg-surface p-6 sm:p-8">
                 <div className="flex flex-wrap items-start justify-between gap-x-6 gap-y-2">
                   <div>
                     <h3 className="font-display text-xl font-bold tracking-tight sm:text-2xl">{item.role}</h3>

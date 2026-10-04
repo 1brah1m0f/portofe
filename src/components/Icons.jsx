@@ -131,6 +131,68 @@ export const GraduationCap = (p) => (
   </Stroke>
 )
 
+export const Shield = (p) => (
+  <Stroke {...p}>
+    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z" />
+    <path d="m9 12 2 2 4-4" />
+  </Stroke>
+)
+
+export const Leaf = (p) => (
+  <Stroke {...p}>
+    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+  </Stroke>
+)
+
+export const Satellite = (p) => (
+  <Stroke {...p}>
+    <path d="M13 7 9 3 5 7l4 4" />
+    <path d="m17 11 4 4-4 4-4-4" />
+    <path d="m8 12 4 4 6-6-4-4Z" />
+    <path d="m16 8 3-3" />
+    <path d="M9 21a6 6 0 0 0-6-6" />
+  </Stroke>
+)
+
+export const Calendar = (p) => (
+  <Stroke {...p}>
+    <rect x="3" y="4" width="18" height="18" rx="2" />
+    <path d="M16 2v4M8 2v4M3 10h18" />
+  </Stroke>
+)
+
+export const Rocket = (p) => (
+  <Stroke {...p}>
+    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z" />
+    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z" />
+    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  </Stroke>
+)
+
+export const Cloud = (p) => (
+  <Stroke {...p}>
+    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+  </Stroke>
+)
+
+export const FileText = (p) => (
+  <Stroke {...p}>
+    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+    <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+    <path d="M10 9H8M16 13H8M16 17H8" />
+  </Stroke>
+)
+
+export const Users = (p) => (
+  <Stroke {...p}>
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+    <circle cx="9" cy="7" r="4" />
+    <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+  </Stroke>
+)
+
 export const Instagram = (p) => (
   <Stroke {...p}>
     <rect x="2" y="2" width="20" height="20" rx="5" />

@@ -6,7 +6,7 @@ export default function Education({ t }) {
   const e = t.education
 
   return (
-    <Section id="education" index="05" label={e.label} title={e.title}>
+    <Section id="education" index="06" label={e.label} title={e.title}>
       <div className="grid gap-6 md:grid-cols-3">
         {education.map((ed) => {
           const item = e.items[ed.id]
@@ -16,7 +16,7 @@ export default function Education({ t }) {
               href={ed.url}
               target="_blank"
               rel="noreferrer"
-              className="reveal group flex flex-col rounded-3xl border border-line bg-surface p-6 transition-colors hover:border-muted/50 sm:p-7"
+              className="reveal spotlight group flex flex-col rounded-3xl border border-line bg-surface p-6 sm:p-7"
             >
               <div className="flex items-center justify-between">
                 <div className="grid size-10 place-items-center rounded-xl bg-surface-2 text-accent">

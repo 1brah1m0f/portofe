@@ -15,7 +15,7 @@ export default function Awards({ t }) {
   return (
     <Section id="awards" index="04" label={a.label} title={a.title}>
       <div className="grid gap-6 lg:grid-cols-[1fr_1.25fr]">
-        <article className="reveal relative flex flex-col overflow-hidden rounded-3xl border border-line bg-surface p-6 sm:p-8">
+        <article className="reveal spotlight flex flex-col overflow-hidden rounded-3xl border border-line bg-surface p-6 sm:p-8">
           <div className="pointer-events-none absolute -bottom-20 -left-20 size-64 rounded-full bg-accent/10 blur-3xl" />
           <div className="relative flex items-center gap-2 font-mono text-xs text-accent">
             <Globe className="size-4" />
@@ -29,12 +29,12 @@ export default function Awards({ t }) {
           </p>
         </article>
 
-        <ul className="reveal divide-y divide-line rounded-3xl border border-line bg-surface">
+        <ul className="reveal divide-y divide-line overflow-hidden rounded-3xl border border-line bg-surface" style={{ '--d': 1 }}>
           {awards.map((aw) => {
             const item = a.items[aw.id]
             return (
-              <li key={aw.id} className="flex items-start gap-4 px-5 py-5 sm:px-7">
-                <div className="mt-0.5 grid size-10 shrink-0 place-items-center rounded-xl bg-surface-2 text-accent">
+              <li key={aw.id} className="group flex items-start gap-4 px-5 py-5 transition-colors hover:bg-surface-2/60 sm:px-7">
+                <div className="mt-0.5 grid size-10 shrink-0 place-items-center rounded-xl bg-surface-2 text-accent transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
                   <Trophy className="size-5" />
                 </div>
                 <div className="min-w-0 flex-1">

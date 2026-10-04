@@ -3,11 +3,11 @@ import Section from './Section'
 
 function Group({ title, items }) {
   return (
-    <div className="reveal rounded-3xl border border-line bg-surface p-6 sm:p-7">
+    <div className="reveal spotlight rounded-3xl border border-line bg-surface p-6 sm:p-7">
       <h3 className="font-mono text-xs tracking-wider text-muted uppercase">{title}</h3>
       <ul className="mt-4 flex flex-wrap gap-2">
         {items.map((s) => (
-          <li key={s} className="rounded-lg border border-line bg-surface-2 px-3 py-1.5 text-sm font-medium">
+          <li key={s} className="rounded-lg border border-line bg-surface-2 px-3 py-1.5 text-sm font-medium transition-colors hover:border-accent hover:text-accent">
             {s}
           </li>
         ))}
@@ -20,7 +20,7 @@ export default function Skills({ t }) {
   const s = t.skills
 
   return (
-    <Section id="skills" index="06" label={s.label} title={s.title}>
+    <Section id="skills" index="07" label={s.label} title={s.title}>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {skills.map((g) => (
           <Group key={g.id} title={s.groups[g.id]} items={g.items} />

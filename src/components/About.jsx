@@ -24,7 +24,7 @@ export default function About({ t }) {
           </div>
         </div>
 
-        <dl className="reveal divide-y divide-line self-start rounded-2xl border border-line bg-surface">
+        <dl className="reveal spotlight divide-y divide-line self-start rounded-2xl border border-line bg-surface" style={{ '--d': 1 }}>
           {a.facts.map((f) => (
             <div key={f.label} className="px-6 py-5">
               <dt className="font-mono text-xs tracking-wider text-muted uppercase">{f.label}</dt>
