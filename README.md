@@ -18,6 +18,9 @@ npm run build    # production build in dist/
 - `src/data.js` — links, dates, tags, project URLs
 - `public/shikhi.png` — profile photo
 - `public/Shikhi_Ibrahimov_CV.docx` — file served by the "Download CV" button
+- `public/Shikhi_Ibrahimov_Recommendation_Orbit_Catapult.pdf` — linked from the Recommendation section
+- Project screenshots: drop an image into `public/projects/` and set `image: '/projects/name.png'` on the project in `src/data.js` (otherwise an icon cover is shown)
+- News / posts under an award: add `news: [{ source: 'LinkedIn', url: '...' }]` to that award in `src/data.js`
 
 ## Deploy
 
