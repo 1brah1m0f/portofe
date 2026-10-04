@@ -93,11 +93,12 @@ export const projects = [
   },
   {
     id: 'nextevent',
+    image: '/projects/nextevent.jpg',
     icon: 'calendar',
     start: '2026-04',
     end: '2026-05',
     tags: ['TypeScript', 'Full-stack', 'Maps', 'Vercel', 'Render'],
-    live: 'https://event-hub-psi-seven.vercel.app',
+    live: 'https://event-hub-lilac-seven.vercel.app',
     video: 'https://youtube.com/shorts/oycqlxHBlPs',
     code: 'https://github.com/1brah1m0f/eventHub',
   },
