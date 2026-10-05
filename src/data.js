@@ -145,14 +145,43 @@ export const awards = [
     id: 'gencvizyon',
     place: 3,
     date: '2026-01-22',
-    news: [{ source: 'Muallim.edu.az', url: 'https://muallim.edu.az/gencvizyon-ideyatonunun-final-merhelesi-kecirilib' }],
+    news: [
+      { source: 'Odlar Yurdu University', url: { en: 'https://oyu.edu.az/en/news/oyu-gencvizyon-ideathonunda-3-cu-yer-qazandi', az: 'https://oyu.edu.az/az/news/oyu-gencvizyon-ideathonunda-3-cu-yer-qazandi' } },
+      { source: 'Muallim.edu.az', url: 'https://muallim.edu.az/gencvizyon-ideyatonunun-final-merhelesi-kecirilib' },
+    ],
   },
-  { id: 'ai4cyber', place: 3, date: '2026-01-22' },
+  {
+    id: 'ai4cyber',
+    place: 3,
+    date: '2026-01-22',
+    news: [{ source: 'Odlar Yurdu University', url: { en: 'https://oyu.edu.az/en/news/odlar-yurdu-universitetinin-telebesi-ai4cyber-hakatonunda-ugur-qazanib', az: 'https://oyu.edu.az/az/news/odlar-yurdu-universitetinin-telebesi-ai4cyber-hakatonunda-ugur-qazanib' } }],
+  },
 ]
 
 // Press. kind 'mention' = the article names Shikhi; 'event' = coverage of an event/program he took part in.
 // title / url may be a string or { en, az } when the source has both language versions.
 export const press = [
+  {
+    id: 'oyu-aws',
+    kind: 'mention',
+    source: 'Odlar Yurdu University',
+    date: '2026-06-30',
+    image: '/press/aws.webp',
+    title: { en: 'OYU AWS Student Builder Group has officially started its activities', az: 'OYU AWS Student Builder Group rəsmi fəaliyyətə başlayıb' },
+    url: {
+      en: 'https://oyu.edu.az/en/news/oyu-aws-student-builder-group-resmi-fealiyyete-baslayib',
+      az: 'https://oyu.edu.az/az/news/oyu-aws-student-builder-group-resmi-fealiyyete-baslayib',
+    },
+  },
+  {
+    id: 'holberton-gamejam',
+    kind: 'mention',
+    source: 'Holberton School Azerbaijan · Instagram',
+    date: '2026-05-29',
+    image: '/press/gamejam.jpg',
+    title: { en: 'Another success from our Holbie — 3rd place', az: 'Holbie-mizdən növbəti uğur — 3-cü yer' },
+    url: 'https://www.instagram.com/p/DY86hW7DSwL/',
+  },
   {
     id: 'oyu-farm2tour',
     kind: 'mention',
@@ -181,13 +210,31 @@ export const press = [
     },
   },
   {
-    id: 'holberton-gamejam',
+    id: 'oyu-gencvizyon',
     kind: 'mention',
-    source: 'Holberton School Azerbaijan · Instagram',
-    date: '2026-05-29',
-    image: '/press/gamejam.jpg',
-    title: { en: 'Another success from our Holbie — 3rd place', az: 'Holbie-mizdən növbəti uğur — 3-cü yer' },
-    url: 'https://www.instagram.com/p/DY86hW7DSwL/',
+    source: 'Odlar Yurdu University',
+    date: '2026-02-10',
+    image: '/press/gencvizyon.jpg',
+    title: { en: 'OYU won 3rd place in the “GəncVİZYON” Ideathon', az: 'OYU “GəncVİZYON” Ideathonunda 3-cü yer qazandı' },
+    url: {
+      en: 'https://oyu.edu.az/en/news/oyu-gencvizyon-ideathonunda-3-cu-yer-qazandi',
+      az: 'https://oyu.edu.az/az/news/oyu-gencvizyon-ideathonunda-3-cu-yer-qazandi',
+    },
+  },
+  {
+    id: 'oyu-ai4cyber',
+    kind: 'mention',
+    source: 'Odlar Yurdu University',
+    date: '2026-02-03',
+    image: '/press/ai4cyber.jpg',
+    title: {
+      en: 'Odlar Yurdu University student achieves success at the “Ai4Cyber” hackathon',
+      az: 'Odlar Yurdu Universitetinin tələbəsi “Ai4Cyber” hakatonunda uğur qazanıb',
+    },
+    url: {
+      en: 'https://oyu.edu.az/en/news/odlar-yurdu-universitetinin-telebesi-ai4cyber-hakatonunda-ugur-qazanib',
+      az: 'https://oyu.edu.az/az/news/odlar-yurdu-universitetinin-telebesi-ai4cyber-hakatonunda-ugur-qazanib',
+    },
   },
   {
     id: 'pgconnects',

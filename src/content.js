@@ -239,6 +239,9 @@ export const content = {
       mentionBadge: 'Mentions me',
       eventsTitle: 'Coverage of events I took part in',
       items: {
+        'oyu-aws': 'Odlar Yurdu University announcing the launch of the OYU AWS Student Builder Group, led by me.',
+        'oyu-gencvizyon': 'Odlar Yurdu University on our team — with me as captain — taking 3rd place at the GəncVİZYON ideathon final.',
+        'oyu-ai4cyber': 'Odlar Yurdu University on my 3rd place with the CyberVision team at the Ai4Cyber hackathon (Holberton School, TEDSPACE, GDG Baku).',
         'oyu-farm2tour': 'Odlar Yurdu University on our team taking 2nd place at the Farm2Tour agritourism hackathon (11–15 May).',
         'oyu-azcon': 'Odlar Yurdu University on my result at the AZCON Future Tech: Transport, Telecom & AI Challenge.',
         'holberton-gamejam': 'Holberton School Azerbaijan congratulating me and my team on 3rd place at the Odlar Yurdu GameDev Bootcamp.',
@@ -490,6 +493,9 @@ export const content = {
       mentionBadge: 'Məndən bəhs edir',
       eventsTitle: 'İştirak etdiyim tədbirlər haqqında',
       items: {
+        'oyu-aws': 'Odlar Yurdu Universiteti mənim rəhbərlik etdiyim OYU AWS Student Builder Group-un rəsmi fəaliyyətə başlamasını elan edir.',
+        'oyu-gencvizyon': 'Odlar Yurdu Universiteti kapitanı olduğum komandamızın GəncVİZYON ideyatonunun finalında 3-cü yer qazanması haqqında.',
+        'oyu-ai4cyber': 'Odlar Yurdu Universiteti CyberVision komandası ilə Ai4Cyber hakatonunda (Holberton School, TEDSPACE, GDG Baku) qazandığım 3-cü yer haqqında.',
         'oyu-farm2tour': 'Odlar Yurdu Universiteti komandamızın Farm2Tour aqroturizm hakatonunda (11–15 may) 2-ci yer qazanması haqqında.',
         'oyu-azcon': 'Odlar Yurdu Universiteti AZCON Future Tech: Transport, Telecom & AI Challenge hakatonundakı nəticəm haqqında.',
         'holberton-gamejam': 'Holberton School Azerbaijan Odlar Yurdu GameDev Bootcamp-da 3-cü yer üçün məni və komandamı təbrik edir.',
