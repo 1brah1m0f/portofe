@@ -2,6 +2,7 @@
 
 export const content = {
   en: {
+    lang: 'en',
     nav: {
       logo: 'Shikhi',
       about: 'About',
@@ -233,9 +234,15 @@ export const content = {
     press: {
       label: 'Press',
       title: 'In the news',
-      intro: 'Coverage of the programs, competitions and events I took part in.',
+      intro: 'What universities, schools and media have written about my work — and about the events I took part in.',
       read: 'Read the article',
+      mentionBadge: 'Mentions me',
+      eventsTitle: 'Coverage of events I took part in',
       items: {
+        'oyu-farm2tour': 'Odlar Yurdu University on our team taking 2nd place at the Farm2Tour agritourism hackathon (11–15 May).',
+        'oyu-azcon': 'Odlar Yurdu University on my result at the AZCON Future Tech: Transport, Telecom & AI Challenge.',
+        'holberton-gamejam': 'Holberton School Azerbaijan congratulating me and my team on 3rd place at the Odlar Yurdu GameDev Bootcamp.',
+        'xsolla-bootcamp': 'Xsolla on the Odlar Yurdu GameDev Bootcamp, where our team took 3rd place.',
         pgconnects: 'I was invited to this summit in Shanghai after the Xsolla Game Jam and presented my own project there.',
         gencvizyon: 'The final of the GəncVizyon 2026 ideathon, where our team took 3rd place.',
         vistar: 'The launch of the VISTAR Center of Excellence — the program where our team built SeaSentry and presented it at Demo Day.',
@@ -244,6 +251,7 @@ export const content = {
   },
 
   az: {
+    lang: 'az',
     nav: {
       logo: 'Şıxı',
       about: 'Haqqımda',
@@ -477,9 +485,15 @@ export const content = {
     press: {
       label: 'Mətbuat',
       title: 'Xəbərlərdə',
-      intro: 'İştirak etdiyim proqramlar, yarışlar və tədbirlər haqqında yazılanlar.',
+      intro: 'Universitetlərin, məktəblərin və medianın işim haqqında yazdıqları — və iştirak etdiyim tədbirlər barədə xəbərlər.',
       read: 'Məqaləni oxu',
+      mentionBadge: 'Məndən bəhs edir',
+      eventsTitle: 'İştirak etdiyim tədbirlər haqqında',
       items: {
+        'oyu-farm2tour': 'Odlar Yurdu Universiteti komandamızın Farm2Tour aqroturizm hakatonunda (11–15 may) 2-ci yer qazanması haqqında.',
+        'oyu-azcon': 'Odlar Yurdu Universiteti AZCON Future Tech: Transport, Telecom & AI Challenge hakatonundakı nəticəm haqqında.',
+        'holberton-gamejam': 'Holberton School Azerbaijan Odlar Yurdu GameDev Bootcamp-da 3-cü yer üçün məni və komandamı təbrik edir.',
+        'xsolla-bootcamp': 'Xsolla komandamızın 3-cü yer qazandığı Odlar Yurdu GameDev Bootcamp haqqında.',
         pgconnects: 'Xsolla Game Jam-dən sonra Şanxaydakı bu sammitə dəvət aldım və orada öz layihəmi təqdim etdim.',
         gencvizyon: 'Komandamızın 3-cü yer qazandığı GəncVizyon 2026 ideyatonunun finalı.',
         vistar: 'VISTAR Mükəmməllik Mərkəzinin açılışı — komandamızın SeaSentry-ni qurub Demo Day-də təqdim etdiyi proqram.',

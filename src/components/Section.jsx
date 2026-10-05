@@ -33,3 +33,8 @@ export function formatDate(value, t) {
 export function period(start, end, t) {
   return `${formatDate(start, t)} — ${end ? formatDate(end, t) : t.present}`
 }
+
+// Values that differ by language are stored as { en, az }; plain strings are shared.
+export function pick(value, t) {
+  return value && typeof value === 'object' ? value[t.lang] ?? value.en : value
+}

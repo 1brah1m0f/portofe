@@ -119,10 +119,28 @@ export const projects = [
 // Optional news/posts shown under an award:
 //   news: [{ source: 'LinkedIn', url: 'https://...' }, { source: 'Instagram', url: '...' }]
 export const awards = [
-  { id: 'gamejam', place: 3, date: '2026-05-23' },
-  { id: 'farm2tour', place: 2, date: '2026-05-14' },
+  {
+    id: 'gamejam',
+    place: 3,
+    date: '2026-05-23',
+    news: [
+      { source: 'Holberton School (Instagram)', url: 'https://www.instagram.com/p/DY86hW7DSwL/' },
+      { source: 'Xsolla', url: 'https://xsolla.com/blog/xsolla-and-partners-empower-next-generation-game-developers' },
+    ],
+  },
+  {
+    id: 'farm2tour',
+    place: 2,
+    date: '2026-05-14',
+    news: [{ source: 'Odlar Yurdu University', url: { en: 'https://oyu.edu.az/en/news/oyu-telebesi-farm2tour-hakatonunda-ugur-qazanib', az: 'https://oyu.edu.az/az/news/oyu-telebesi-farm2tour-hakatonunda-ugur-qazanib' } }],
+  },
   { id: 'rccode', place: 'nom', date: '2026-05-11' },
-  { id: 'azcon', place: 3, date: '2026-04-10' },
+  {
+    id: 'azcon',
+    place: 3,
+    date: '2026-04-10',
+    news: [{ source: 'Odlar Yurdu University', url: { en: 'https://oyu.edu.az/en/news/odlar-yurdu-universitetinin-telebesi-beynelxalq-hakathonda-ugur-qazanib', az: 'https://oyu.edu.az/az/news/odlar-yurdu-universitetinin-telebesi-beynelxalq-hakathonda-ugur-qazanib' } }],
+  },
   {
     id: 'gencvizyon',
     place: 3,
@@ -132,17 +150,64 @@ export const awards = [
   { id: 'ai4cyber', place: 3, date: '2026-01-22' },
 ]
 
-// Press: articles about events/programs Shikhi took part in. Titles stay in the original language.
+// Press. kind 'mention' = the article names Shikhi; 'event' = coverage of an event/program he took part in.
+// title / url may be a string or { en, az } when the source has both language versions.
 export const press = [
   {
+    id: 'oyu-farm2tour',
+    kind: 'mention',
+    source: 'Odlar Yurdu University',
+    date: '2026-05-12',
+    image: '/press/farm2tour.webp',
+    title: { en: 'OYU student achieves success at Farm2Tour Hackathon', az: 'OYU tələbəsi Farm2Tour Hakatonunda uğur qazanıb' },
+    url: {
+      en: 'https://oyu.edu.az/en/news/oyu-telebesi-farm2tour-hakatonunda-ugur-qazanib',
+      az: 'https://oyu.edu.az/az/news/oyu-telebesi-farm2tour-hakatonunda-ugur-qazanib',
+    },
+  },
+  {
+    id: 'oyu-azcon',
+    kind: 'mention',
+    source: 'Odlar Yurdu University',
+    date: '2026-04-30',
+    image: '/press/azcon.jpg',
+    title: {
+      en: 'Odlar Yurdu University student wins international hackathon',
+      az: 'Odlar Yurdu Universitetinin tələbəsi beynəlxalq hakathonda uğur qazanıb',
+    },
+    url: {
+      en: 'https://oyu.edu.az/en/news/odlar-yurdu-universitetinin-telebesi-beynelxalq-hakathonda-ugur-qazanib',
+      az: 'https://oyu.edu.az/az/news/odlar-yurdu-universitetinin-telebesi-beynelxalq-hakathonda-ugur-qazanib',
+    },
+  },
+  {
+    id: 'holberton-gamejam',
+    kind: 'mention',
+    source: 'Holberton School Azerbaijan · Instagram',
+    date: '2026-05-29',
+    image: '/press/gamejam.jpg',
+    title: { en: 'Another success from our Holbie — 3rd place', az: 'Holbie-mizdən növbəti uğur — 3-cü yer' },
+    url: 'https://www.instagram.com/p/DY86hW7DSwL/',
+  },
+  {
     id: 'pgconnects',
+    kind: 'event',
     source: 'PocketGamer.biz',
     date: '2026-07-25',
     title: 'Thanks to the sponsors of PG Connects Summit Shanghai',
     url: 'https://www.pocketgamer.biz/thanks-to-the-sponsors-of-pg-connects-summit-shanghai/',
   },
   {
+    id: 'xsolla-bootcamp',
+    kind: 'event',
+    source: 'Xsolla',
+    date: '2026-06-17',
+    title: 'Xsolla and partners empower the next generation of game developers at the Odlar Yurdu University GameDev Bootcamp',
+    url: 'https://xsolla.com/blog/xsolla-and-partners-empower-next-generation-game-developers',
+  },
+  {
     id: 'gencvizyon',
+    kind: 'event',
     source: 'Muallim.edu.az',
     date: '2026-02-06',
     title: '“GəncVizyon” ideyatonunun final mərhələsi keçirilib',
@@ -150,6 +215,7 @@ export const press = [
   },
   {
     id: 'vistar',
+    kind: 'event',
     source: 'Ministry of Digital Development and Transport',
     date: '2025-12-17',
     title: '“Vistar” Center of Excellence Launched in Azerbaijan',

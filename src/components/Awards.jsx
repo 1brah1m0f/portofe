@@ -1,6 +1,6 @@
 import { awards } from '../data'
 import { ArrowUpRight, Globe, MapPin, Trophy } from './Icons'
-import Section, { formatDate } from './Section'
+import Section, { formatDate, pick } from './Section'
 
 const badgeStyle = {
   2: 'bg-accent text-accent-fg',
@@ -53,8 +53,8 @@ export default function Awards({ t }) {
                       <span className="font-mono text-muted">{a.news}:</span>
                       {aw.news.map((n) => (
                         <a
-                          key={n.url}
-                          href={n.url}
+                          key={n.source}
+                          href={pick(n.url, t)}
                           target="_blank"
                           rel="noreferrer"
                           className="inline-flex items-center gap-1 font-medium text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent"
