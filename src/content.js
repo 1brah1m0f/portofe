@@ -239,6 +239,7 @@ export const content = {
       mentionBadge: 'Mentions me',
       eventsTitle: 'Coverage of events I took part in',
       items: {
+        'apa-gencvizyon': 'APA’s report on the GəncVİZYON ideathon final — the award ceremony photos include our team. Also covered by Haqqin.az, Bizim.media and Konkret.az.',
         'oyu-aws': 'Odlar Yurdu University announcing the launch of the OYU AWS Student Builder Group, led by me.',
         'oyu-gencvizyon': 'Odlar Yurdu University on our team — with me as captain — taking 3rd place at the GəncVİZYON ideathon final.',
         'oyu-ai4cyber': 'Odlar Yurdu University on my 3rd place with the CyberVision team at the Ai4Cyber hackathon (Holberton School, TEDSPACE, GDG Baku).',
@@ -493,6 +494,7 @@ export const content = {
       mentionBadge: 'Məndən bəhs edir',
       eventsTitle: 'İştirak etdiyim tədbirlər haqqında',
       items: {
+        'apa-gencvizyon': 'APA-nın GəncVİZYON ideyatonunun finalı haqqında xəbəri — mükafatlandırma mərasiminin şəkillərində komandamız da var. Haqqin.az, Bizim.media və Konkret.az da bu barədə yazıb.',
         'oyu-aws': 'Odlar Yurdu Universiteti mənim rəhbərlik etdiyim OYU AWS Student Builder Group-un rəsmi fəaliyyətə başlamasını elan edir.',
         'oyu-gencvizyon': 'Odlar Yurdu Universiteti kapitanı olduğum komandamızın GəncVİZYON ideyatonunun finalında 3-cü yer qazanması haqqında.',
         'oyu-ai4cyber': 'Odlar Yurdu Universiteti CyberVision komandası ilə Ai4Cyber hakatonunda (Holberton School, TEDSPACE, GDG Baku) qazandığım 3-cü yer haqqında.',

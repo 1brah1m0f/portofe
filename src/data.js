@@ -147,6 +147,7 @@ export const awards = [
     date: '2026-02-06',
     news: [
       { source: 'Odlar Yurdu University', url: { en: 'https://oyu.edu.az/en/news/oyu-gencvizyon-ideathonunda-3-cu-yer-qazandi', az: 'https://oyu.edu.az/az/news/oyu-gencvizyon-ideathonunda-3-cu-yer-qazandi' } },
+      { source: 'APA', url: 'https://apa.az/ikt/narin-terefdasligi-ile-gencvizyon-ideyatonu-ugurla-basa-catib-938588' },
       { source: 'Muallim.edu.az', url: 'https://muallim.edu.az/gencvizyon-ideyatonunun-final-merhelesi-kecirilib' },
     ],
   },
@@ -251,6 +252,14 @@ export const press = [
     date: '2026-06-17',
     title: 'Xsolla and partners empower the next generation of game developers at the Odlar Yurdu University GameDev Bootcamp',
     url: 'https://xsolla.com/blog/xsolla-and-partners-empower-next-generation-game-developers',
+  },
+  {
+    id: 'apa-gencvizyon',
+    kind: 'event',
+    source: 'APA',
+    date: '2026-02-09',
+    title: '“Nar”ın tərəfdaşlığı ilə “GəncVİZYON” ideyatonu uğurla başa çatıb',
+    url: 'https://apa.az/ikt/narin-terefdasligi-ile-gencvizyon-ideyatonu-ugurla-basa-catib-938588',
   },
   {
     id: 'gencvizyon',
