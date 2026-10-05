@@ -151,7 +151,7 @@ export const content = {
     awards: {
       label: 'Awards',
       title: 'Hackathons & recognition',
-      places: { 2: '2nd place', 3: '3rd place', nom: 'Second Prize nomination' },
+      places: { 1: 'Winner', 2: '2nd place', 3: '3rd place', nom: 'Second Prize nomination' },
       news: 'In the news',
       items: {
         gamejam: { title: 'OYU Game Jam', org: 'Xsolla & Odlar Yurdu University' },
@@ -403,7 +403,7 @@ export const content = {
     awards: {
       label: 'Mükafatlar',
       title: 'Hakatonlar və nailiyyətlər',
-      places: { 2: '2-ci yer', 3: '3-cü yer', nom: '“İkinci mükafat” nominasiyası' },
+      places: { 1: 'Qalib', 2: '2-ci yer', 3: '3-cü yer', nom: '“İkinci mükafat” nominasiyası' },
       news: 'Xəbərlərdə',
       items: {
         gamejam: { title: 'OYU Game Jam', org: 'Xsolla və Odlar Yurdu Universiteti' },

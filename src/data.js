@@ -137,14 +137,14 @@ export const awards = [
   { id: 'rccode', place: 'nom', date: '2026-05-11' },
   {
     id: 'azcon',
-    place: 3,
+    place: 1,
     date: '2026-04-10',
     news: [{ source: 'Odlar Yurdu University', url: { en: 'https://oyu.edu.az/en/news/odlar-yurdu-universitetinin-telebesi-beynelxalq-hakathonda-ugur-qazanib', az: 'https://oyu.edu.az/az/news/odlar-yurdu-universitetinin-telebesi-beynelxalq-hakathonda-ugur-qazanib' } }],
   },
   {
     id: 'gencvizyon',
     place: 3,
-    date: '2026-01-22',
+    date: '2026-02-06',
     news: [
       { source: 'Odlar Yurdu University', url: { en: 'https://oyu.edu.az/en/news/oyu-gencvizyon-ideathonunda-3-cu-yer-qazandi', az: 'https://oyu.edu.az/az/news/oyu-gencvizyon-ideathonunda-3-cu-yer-qazandi' } },
       { source: 'Muallim.edu.az', url: 'https://muallim.edu.az/gencvizyon-ideyatonunun-final-merhelesi-kecirilib' },
