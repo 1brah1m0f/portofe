@@ -35,12 +35,12 @@ export const content = {
       roles: ['Software Engineer', 'AWS Builder Group Leader', 'Hackathon Competitor', 'Product Builder'],
       badges: {
         aws: 'AWS Builder Group Leader',
-        awards: '5× hackathon podium',
+        awards: '7× competition awards',
         summit: 'PG Connects · Shanghai',
       },
     },
     stats: {
-      awards: 'Hackathon podiums',
+      awards: 'Competition awards',
       products: 'Products built',
       repos: 'Open-source repos',
       summit: 'International summit',
@@ -151,10 +151,11 @@ export const content = {
     awards: {
       label: 'Awards',
       title: 'Hackathons & recognition',
-      places: { 1: 'Winner', 2: '2nd place', 3: '3rd place', nom: 'Second Prize nomination' },
+      places: { 1: 'Winner', 2: '2nd place', 3: '3rd place', secondPrize: 'Second Prize' },
       news: 'In the news',
       items: {
-        gamejam: { title: 'OYU Game Jam', org: 'Xsolla & Odlar Yurdu University' },
+        replit: { title: 'Replit AI & Dev Hackathon', org: 'Replit Baku' },
+        gamejam: { title: 'OYU Game Jam Hackathon', org: 'Xsolla & Odlar Yurdu University' },
         farm2tour: { title: 'Farm2Tour Hackathon', org: 'Agrarian Development Volunteers' },
         rccode: { title: 'RC Code Programming Contest', org: 'RobotChallenge Azerbaijan' },
         azcon: { title: 'AZCON Future Tech: Transport, Telecom & AI Challenge', org: 'Holberton School & AZCON' },
@@ -288,12 +289,12 @@ export const content = {
       roles: ['Proqram mühəndisi', 'AWS Builder Group lideri', 'Hakaton iştirakçısı', 'Məhsul qurucusu'],
       badges: {
         aws: 'AWS Builder Group lideri',
-        awards: '5× hakaton mükafatı',
+        awards: '7× yarış mükafatı',
         summit: 'PG Connects · Şanxay',
       },
     },
     stats: {
-      awards: 'Hakatonda mükafat',
+      awards: 'Yarış mükafatı',
       products: 'Qurduğum məhsul',
       repos: 'Açıq repozitoriya',
       summit: 'Beynəlxalq sammit',
@@ -404,10 +405,11 @@ export const content = {
     awards: {
       label: 'Mükafatlar',
       title: 'Hakatonlar və nailiyyətlər',
-      places: { 1: 'Qalib', 2: '2-ci yer', 3: '3-cü yer', nom: '“İkinci mükafat” nominasiyası' },
+      places: { 1: 'Qalib', 2: '2-ci yer', 3: '3-cü yer', secondPrize: 'İkinci mükafat' },
       news: 'Xəbərlərdə',
       items: {
-        gamejam: { title: 'OYU Game Jam', org: 'Xsolla və Odlar Yurdu Universiteti' },
+        replit: { title: 'Replit AI & Dev hakatonu', org: 'Replit Baku' },
+        gamejam: { title: 'OYU Game Jam hakatonu', org: 'Xsolla və Odlar Yurdu Universiteti' },
         farm2tour: { title: '“Farm2Tour” hakatonu', org: 'Aqrar İnkişaf Könüllüləri' },
         rccode: { title: '“RC Code” proqramlaşdırma yarışması', org: 'RobotChallenge Azerbaijan' },
         azcon: { title: 'AZCON Future Tech: Nəqliyyat, Telekom və Sİ çağırışı', org: 'Holberton School və AZCON' },

@@ -6,12 +6,12 @@ export const links = {
   linkedin: 'https://www.linkedin.com/in/shixiibrahimov/',
   github: 'https://github.com/1brah1m0f',
   instagram: 'https://www.instagram.com/sixi.ibrahimli/',
-  cv: '/Shikhi_Ibrahimov_CV.docx',
+  cv: '/Shikhi_Ibrahimov_CV_Final_Oct2026.pdf',
   recommendation: '/Shikhi_Ibrahimov_Recommendation_Orbit_Catapult.pdf',
 }
 
 export const stats = [
-  { id: 'awards', value: '5' },
+  { id: 'awards', value: '7' },
   { id: 'products', value: '6+' },
   { id: 'repos', value: '35+' },
   { id: 'summit', value: '1' },
@@ -115,14 +115,15 @@ export const projects = [
   },
 ]
 
-// place: 2 / 3 drive the badge style; 'nom' = prize nomination
+// place: numeric podium position or 'secondPrize' for the RC Code award
 // Optional news/posts shown under an award:
 //   news: [{ source: 'LinkedIn', url: 'https://...' }, { source: 'Instagram', url: '...' }]
 export const awards = [
+  { id: 'replit', place: 3, date: '2026-10' },
   {
     id: 'gamejam',
     place: 3,
-    date: '2026-05-23',
+    date: '2026-05',
     news: [
       { source: 'Holberton School (Instagram)', url: 'https://www.instagram.com/p/DY86hW7DSwL/' },
       { source: 'Xsolla', url: 'https://xsolla.com/blog/xsolla-and-partners-empower-next-generation-game-developers' },
@@ -131,20 +132,20 @@ export const awards = [
   {
     id: 'farm2tour',
     place: 2,
-    date: '2026-05-14',
+    date: '2026-05',
     news: [{ source: 'Odlar Yurdu University', url: { en: 'https://oyu.edu.az/en/news/oyu-telebesi-farm2tour-hakatonunda-ugur-qazanib', az: 'https://oyu.edu.az/az/news/oyu-telebesi-farm2tour-hakatonunda-ugur-qazanib' } }],
   },
-  { id: 'rccode', place: 'nom', date: '2026-05-11' },
+  { id: 'rccode', place: 'secondPrize', date: '2026-05' },
   {
     id: 'azcon',
-    place: 1,
-    date: '2026-04-10',
+    place: 3,
+    date: '2026-04',
     news: [{ source: 'Odlar Yurdu University', url: { en: 'https://oyu.edu.az/en/news/odlar-yurdu-universitetinin-telebesi-beynelxalq-hakathonda-ugur-qazanib', az: 'https://oyu.edu.az/az/news/odlar-yurdu-universitetinin-telebesi-beynelxalq-hakathonda-ugur-qazanib' } }],
   },
   {
     id: 'gencvizyon',
     place: 3,
-    date: '2026-02-06',
+    date: '2026-02',
     news: [
       { source: 'Odlar Yurdu University', url: { en: 'https://oyu.edu.az/en/news/oyu-gencvizyon-ideathonunda-3-cu-yer-qazandi', az: 'https://oyu.edu.az/az/news/oyu-gencvizyon-ideathonunda-3-cu-yer-qazandi' } },
       { source: 'APA', url: 'https://apa.az/ikt/narin-terefdasligi-ile-gencvizyon-ideyatonu-ugurla-basa-catib-938588' },
@@ -154,7 +155,7 @@ export const awards = [
   {
     id: 'ai4cyber',
     place: 3,
-    date: '2026-01-22',
+    date: '2026-01',
     news: [{ source: 'Odlar Yurdu University', url: { en: 'https://oyu.edu.az/en/news/odlar-yurdu-universitetinin-telebesi-ai4cyber-hakatonunda-ugur-qazanib', az: 'https://oyu.edu.az/az/news/odlar-yurdu-universitetinin-telebesi-ai4cyber-hakatonunda-ugur-qazanib' } }],
   },
 ]

@@ -6,7 +6,7 @@ const badgeStyle = {
   1: 'bg-accent text-accent-fg shadow-md shadow-accent/30',
   2: 'bg-accent text-accent-fg',
   3: 'bg-accent/15 text-accent',
-  nom: 'border border-line text-muted',
+  secondPrize: 'border border-line text-muted',
 }
 
 export default function Awards({ t }) {
