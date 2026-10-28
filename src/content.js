@@ -26,13 +26,13 @@ export const content = {
       name: 'Shikhi Ibrahimov',
       role: 'Software Engineer & Tech Community Builder',
       intro:
-        "IT student in Baku building AI-powered products, competing in hackathons, and growing Azerbaijan's student tech community as AWS Student Builder Group Leader at Odlar Yurdu University.",
+        "IT student in Baku building AI-powered products and growing Azerbaijan's startup community. Project Manager at Azerbaijan Startup Community and AWS Student Builder Group Leader at Odlar Yurdu University.",
       ctaProjects: 'View projects',
       ctaContact: 'Get in touch',
       ctaCv: 'Download CV',
       photoAlt: 'Shikhi Ibrahimov in Shanghai',
       photoCaption: 'Shanghai · PG Connects 2026',
-      roles: ['Software Engineer', 'AWS Builder Group Leader', 'Hackathon Competitor', 'Product Builder'],
+      roles: ['Software Engineer', 'Project Manager', 'AWS Builder Group Leader', 'Product Builder'],
       badges: {
         aws: 'AWS Builder Group Leader',
         awards: '7× competition awards',
@@ -50,20 +50,29 @@ export const content = {
       title: 'I turn ideas into digital products that make a real impact.',
       paragraphs: [
         "I'm studying Information Technology at Odlar Yurdu University while completing the Full Stack Web Development program at Holberton School. My focus is entrepreneurship and product development — taking an idea all the way to a working product.",
-        "I'm active across Baku's startup ecosystem through tech trainings, hackathons and innovation programs. As AWS Student Builder Group Leader and coordinator at the OYU Incubation Center, I work to empower the next generation of Azerbaijani tech talent.",
+        "Since July 2026, I've been Project Manager at Azerbaijan Startup Community, organizing Demo Days, coordinating team tasks and deadlines, and managing participant registration and communication. I also lead the AWS Student Builder Group at Odlar Yurdu University and contribute as Coordinator and Project Manager at the OYU Incubation Center, helping students build practical skills and turn ideas into digital products.",
       ],
       mottoLabel: 'My loop',
       motto: ['Build', 'Learn', 'Ship', 'Repeat'],
       facts: [
         { label: 'Based in', value: 'Baku, Azerbaijan' },
         { label: 'Focus', value: 'AI products · Full-stack · Cloud' },
-        { label: 'Languages', value: 'Azerbaijani, Turkish, English (B2)' },
+        { label: 'Languages', value: 'Azerbaijani (Native), Turkish (Native), English (B2)' },
       ],
     },
     experience: {
       label: 'Experience',
       title: 'Where I’ve been building',
       items: {
+        asc: {
+          role: 'Project Manager',
+          org: 'Azerbaijan Startup Community',
+          points: [
+            'Organize Demo Day events, coordinating planning, schedules and event delivery.',
+            'Coordinate team members, assign tasks and follow up on progress and deadlines.',
+            'Oversee participant registration, registration lists and attendee communication.',
+          ],
+        },
         aws: {
           role: 'AWS Student Builder Group Leader',
           org: 'AWS Student Builder Group · Odlar Yurdu University',
@@ -85,8 +94,8 @@ export const content = {
           role: 'Event Organizer & Coordinator',
           org: 'OYU Startup & Incubation Center',
           points: [
-            'Coordinate startup events, trainings and innovation programs at the university’s incubation center.',
-            'Support student teams as a project manager on their way from idea to product.',
+            'Contribute as Coordinator and Project Manager at the OYU Incubation Center.',
+            'Organize and coordinate tech events and innovation programs for students within the local startup ecosystem.',
           ],
         },
       },
@@ -200,7 +209,7 @@ export const content = {
         cloud: 'Cloud & Tools',
         soft: 'Beyond code',
       },
-      soft: ['Event management', 'Team communication', 'Problem solving', 'Project management', 'Hackathons', 'Algorithms'],
+      soft: ['Event management', 'Team communication & coordination', 'Problem solving', 'Project management', 'Hackathons', 'Algorithms'],
       languagesTitle: 'Languages',
       languages: [
         { name: 'Azerbaijani', level: 'Native', value: 100 },
@@ -280,13 +289,13 @@ export const content = {
       name: 'Şıxı İbrahimov',
       role: 'Proqram mühəndisi və texnologiya icması qurucusu',
       intro:
-        'Bakıda yaşayan İT tələbəsiyəm. Süni intellekt əsaslı məhsullar qurur, hakatonlarda yarışır və Odlar Yurdu Universitetində AWS Student Builder Group lideri kimi tələbə texnologiya icmasını böyüdürəm.',
+        'Bakıda yaşayan İT tələbəsiyəm. Süni intellekt əsaslı məhsullar qurur və Azərbaycanın startap icmasının inkişafına töhfə verirəm. Azerbaijan Startup Community-də layihə meneceri, Odlar Yurdu Universitetində isə AWS Student Builder Group lideri kimi fəaliyyət göstərirəm.',
       ctaProjects: 'Layihələrə bax',
       ctaContact: 'Əlaqə saxla',
       ctaCv: 'CV-ni yüklə',
       photoAlt: 'Şıxı İbrahimov Şanxayda',
       photoCaption: 'Şanxay · PG Connects 2026',
-      roles: ['Proqram mühəndisi', 'AWS Builder Group lideri', 'Hakaton iştirakçısı', 'Məhsul qurucusu'],
+      roles: ['Proqram mühəndisi', 'Layihə meneceri', 'AWS Builder Group lideri', 'Məhsul qurucusu'],
       badges: {
         aws: 'AWS Builder Group lideri',
         awards: '7× yarış mükafatı',
@@ -304,20 +313,29 @@ export const content = {
       title: 'İdeyaları real təsiri olan rəqəmsal məhsullara çevirirəm.',
       paragraphs: [
         'Odlar Yurdu Universitetində İnformasiya Texnologiyaları üzrə təhsil alıram, eyni zamanda Holberton School-da Full Stack Web Development proqramını keçirəm. Əsas marağım sahibkarlıq və məhsul inkişafıdır — ideyadan başlayıb işləyən məhsula qədər.',
-        'Bakının startap ekosistemində texniki təlimlərə, hakatonlara və innovasiya proqramlarına fəal qoşuluram. AWS Student Builder Group lideri və OYU İnkubasiya Mərkəzində koordinator kimi yeni nəsil Azərbaycan texnologiya istedadlarını gücləndirməyə çalışıram.',
+        '2026-cı ilin iyulundan Azerbaijan Startup Community-də layihə meneceri kimi Demo Day tədbirlərini təşkil edir, komanda tapşırıqlarını və son tarixləri koordinasiya edir, iştirakçı qeydiyyatını və ünsiyyəti idarə edirəm. Eyni zamanda Odlar Yurdu Universitetində AWS Student Builder Group-a rəhbərlik edir, OYU İnkubasiya Mərkəzində koordinator və layihə meneceri kimi tələbələrin praktiki bacarıqlar qazanmasına və ideyalarını rəqəmsal məhsullara çevirməsinə dəstək oluram.',
       ],
       mottoLabel: 'Prinsipim',
       motto: ['Qur', 'Öyrən', 'Yayımla', 'Təkrarla'],
       facts: [
         { label: 'Yaşadığım yer', value: 'Bakı, Azərbaycan' },
         { label: 'Fokus', value: 'Sİ məhsulları · Full-stack · Bulud' },
-        { label: 'Dillər', value: 'Azərbaycan, türk, ingilis (B2)' },
+        { label: 'Dillər', value: 'Azərbaycan dili (ana dili), türk dili (ana dili), ingilis dili (B2)' },
       ],
     },
     experience: {
       label: 'Təcrübə',
       title: 'Harada nə qurmuşam',
       items: {
+        asc: {
+          role: 'Layihə meneceri',
+          org: 'Azerbaijan Startup Community',
+          points: [
+            'Demo Day tədbirlərini təşkil edir, planlama, cədvəllər və tədbirin keçirilməsini koordinasiya edirəm.',
+            'Komanda üzvlərini koordinasiya edir, tapşırıqları bölüşdürür, irəliləyişi və son tarixləri izləyirəm.',
+            'İştirakçı qeydiyyatını, qeydiyyat siyahılarını və iştirakçılarla ünsiyyəti idarə edirəm.',
+          ],
+        },
         aws: {
           role: 'AWS Student Builder Group lideri',
           org: 'AWS Student Builder Group · Odlar Yurdu Universiteti',
@@ -339,8 +357,8 @@ export const content = {
           role: 'Tədbir təşkilatçısı və koordinator',
           org: 'OYU Startap və İnkubasiya Mərkəzi',
           points: [
-            'Universitetin inkubasiya mərkəzində startap tədbirlərini, təlimləri və innovasiya proqramlarını koordinasiya edirəm.',
-            'Layihə meneceri kimi tələbə komandalarını ideyadan məhsula qədər dəstəkləyirəm.',
+            'OYU İnkubasiya Mərkəzində koordinator və layihə meneceri kimi fəaliyyət göstərirəm.',
+            'Yerli startap ekosistemində tələbələr üçün texnologiya tədbirləri və innovasiya proqramları təşkil edir və koordinasiya edirəm.',
           ],
         },
       },
@@ -454,7 +472,7 @@ export const content = {
         cloud: 'Bulud və alətlər',
         soft: 'Koddan kənar',
       },
-      soft: ['Tədbir idarəetməsi', 'Komanda daxili ünsiyyət', 'Problem həlli', 'Layihə idarəetməsi', 'Hakatonlar', 'Alqoritmlər'],
+      soft: ['Tədbir idarəetməsi', 'Komanda daxili ünsiyyət və koordinasiya', 'Problem həlli', 'Layihə idarəetməsi', 'Hakatonlar', 'Alqoritmlər'],
       languagesTitle: 'Dillər',
       languages: [
         { name: 'Azərbaycan dili', level: 'Ana dili', value: 100 },

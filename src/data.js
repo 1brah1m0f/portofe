@@ -6,7 +6,7 @@ export const links = {
   linkedin: 'https://www.linkedin.com/in/shixiibrahimov/',
   github: 'https://github.com/1brah1m0f',
   instagram: 'https://www.instagram.com/sixi.ibrahimli/',
-  cv: '/Shikhi_Ibrahimov_CV_Final_Oct2026.pdf',
+  cv: '/Shikhi_Ibrahimov_CV_Final_Oct2026.pdf?v=003f7d907031',
   recommendation: '/Shikhi_Ibrahimov_Recommendation_Orbit_Catapult.pdf',
 }
 
@@ -24,6 +24,12 @@ export const marquee = [
 ]
 
 export const experience = [
+  {
+    id: 'asc',
+    start: '2026-07',
+    end: null,
+    tags: ['Project management', 'Demo Day', 'Event management', 'Team coordination'],
+  },
   {
     id: 'aws',
     start: '2026-05',
